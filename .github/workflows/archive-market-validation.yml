@@ -1,0 +1,128 @@
+name: archive-market-validation
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout Combination
+        uses: actions/checkout@v4
+        with:
+          path: combination
+          fetch-depth: 1
+
+      - name: Checkout Sentinel Archive
+        uses: actions/checkout@v4
+        with:
+          repository: Tetradim/Sentinel-Archive
+          path: sentinel-archive
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: |
+            combination/pyproject.toml
+            sentinel-archive/requirements-dev.txt
+
+      - name: Install Combination and Archive test dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install -e "./combination[dev]"
+          python -m pip install -r sentinel-archive/requirements-dev.txt
+
+      - name: Record repository versions
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p validation-output
+          {
+            echo "combination_sha=$(git -C combination rev-parse HEAD)"
+            echo "archive_sha=$(git -C sentinel-archive rev-parse HEAD)"
+            python --version
+            python -m pip freeze
+          } > validation-output/environment.txt
+
+      - name: Run Combination test suite
+        id: combination_tests
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          cd combination
+          python -m pytest -vv --junitxml=../validation-output/combination-junit.xml 2>&1 | tee ../validation-output/combination-tests.log
+
+      - name: Run Sentinel Archive test suite
+        id: archive_tests
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          cd sentinel-archive
+          python -m pytest -vv --junitxml=../validation-output/archive-junit.xml 2>&1 | tee ../validation-output/archive-tests.log
+
+      - name: Run deterministic automation and one-month market campaign
+        id: campaign
+        continue-on-error: true
+        shell: bash
+        env:
+          COMBINATION_SHA: ${{ github.sha }}
+        run: |
+          set -o pipefail
+          export ARCHIVE_SHA="$(git -C sentinel-archive rev-parse HEAD)"
+          python combination/scripts/archive_market_validation.py \
+            --archive-path sentinel-archive \
+            --output-dir validation-output 2>&1 | tee validation-output/campaign-console.log
+
+      - name: Write workflow outcome summary
+        if: always()
+        shell: bash
+        env:
+          COMBINATION_TESTS: ${{ steps.combination_tests.outcome }}
+          ARCHIVE_TESTS: ${{ steps.archive_tests.outcome }}
+          CAMPAIGN: ${{ steps.campaign.outcome }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          outcomes = {
+              "combination_tests": os.environ["COMBINATION_TESTS"],
+              "archive_tests": os.environ["ARCHIVE_TESTS"],
+              "campaign": os.environ["CAMPAIGN"],
+          }
+          Path("validation-output/workflow-outcomes.json").write_text(json.dumps(outcomes, indent=2), encoding="utf-8")
+          print(json.dumps(outcomes, indent=2))
+          PY
+
+      - name: Upload complete validation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: archive-market-validation-${{ github.run_id }}
+          path: validation-output
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Enforce validation result
+        if: always()
+        shell: bash
+        env:
+          COMBINATION_TESTS: ${{ steps.combination_tests.outcome }}
+          ARCHIVE_TESTS: ${{ steps.archive_tests.outcome }}
+          CAMPAIGN: ${{ steps.campaign.outcome }}
+        run: |
+          test "$COMBINATION_TESTS" = success
+          test "$ARCHIVE_TESTS" = success
+          test "$CAMPAIGN" = success
