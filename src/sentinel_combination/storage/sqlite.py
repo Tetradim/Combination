@@ -67,6 +67,31 @@ class SQLiteTransaction:
             return False
         return True
 
+    def claim_execution(
+        self,
+        *,
+        source: str,
+        execution_id: str,
+    ) -> bool:
+        try:
+            self.connection.execute(
+                """
+                INSERT INTO processed_executions(
+                    source,
+                    execution_id,
+                    processed_at
+                ) VALUES (?, ?, ?)
+                """,
+                (
+                    source,
+                    execution_id,
+                    datetime.now(timezone.utc).isoformat(),
+                ),
+            )
+        except sqlite3.IntegrityError:
+            return False
+        return True
+
     def append_event(self, event: EventEnvelope) -> None:
         self.connection.execute(
             """
@@ -271,6 +296,13 @@ class SQLiteStore:
                     external_event_id TEXT NOT NULL,
                     processed_at TEXT NOT NULL,
                     PRIMARY KEY(source, external_event_id)
+                );
+
+                CREATE TABLE IF NOT EXISTS processed_executions(
+                    source TEXT NOT NULL,
+                    execution_id TEXT NOT NULL,
+                    processed_at TEXT NOT NULL,
+                    PRIMARY KEY(source, execution_id)
                 );
 
                 CREATE TABLE IF NOT EXISTS events(

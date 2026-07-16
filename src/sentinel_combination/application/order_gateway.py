@@ -44,6 +44,10 @@ class OrderGateway:
 
         require_exposure_readiness(intent, readiness)
 
+        with self.store.transaction() as transaction:
+            if transaction.get_order(intent.client_order_id) is not None:
+                raise ValueError("client_order_id has already been used")
+
         decision = evaluate_order_risk(
             intent=intent,
             instrument=instrument,

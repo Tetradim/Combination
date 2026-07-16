@@ -17,5 +17,9 @@ def require_exposure_readiness(
             raise PermissionError(
                 "risk-reducing order blocked because persistence is unhealthy"
             )
+        if not readiness.positions_reconciled:
+            raise PermissionError(
+                "risk-reducing order blocked because positions are not reconciled"
+            )
         return
     readiness.assert_ready_for_exposure()

@@ -29,6 +29,13 @@ class FillProcessor:
             ):
                 return False
 
+            if update.execution_id is not None:
+                if not transaction.claim_execution(
+                    source=update.source,
+                    execution_id=update.execution_id,
+                ):
+                    return False
+
             lifecycle = transaction.get_order(update.client_order_id)
             if lifecycle is None:
                 raise LookupError("broker update references an unknown order")

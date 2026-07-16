@@ -62,16 +62,30 @@ def evaluate_order_risk(
         price=context.reference_price,
         quantity=intent.quantity,
     )
-    projected_quantity = context.current_position_quantity + (intent.quantity * intent.side.sign)
+    projected_quantity = (
+        context.current_position_quantity
+        + (intent.quantity * intent.side.sign)
+    )
     projected_position_notional = instrument.notional(
         price=context.reference_price,
         quantity=projected_quantity,
     )
     reasons: list[str] = []
 
+    if intent.reduce_only:
+        if context.current_position_quantity == 0:
+            reasons.append("reduce-only order has no open position")
+        elif context.current_position_quantity * intent.side.sign > 0:
+            reasons.append("reduce-only order would increase exposure")
+        elif intent.quantity > abs(context.current_position_quantity):
+            reasons.append("reduce-only order exceeds the open position")
+
     if not intent.reduce_only and order_notional > limits.maximum_order_notional:
         reasons.append("order notional exceeds limit")
-    if not intent.reduce_only and projected_position_notional > limits.maximum_position_notional:
+    if (
+        not intent.reduce_only
+        and projected_position_notional > limits.maximum_position_notional
+    ):
         reasons.append("projected position notional exceeds limit")
     if context.realized_pnl_today <= -limits.maximum_daily_loss:
         reasons.append("daily loss limit reached")
@@ -84,7 +98,10 @@ def evaluate_order_risk(
             reasons.append("insufficient buying power")
         elif context.account_equity <= 0:
             reasons.append("account equity is unavailable")
-        elif context.initial_margin_required / context.account_equity > limits.maximum_margin_fraction:
+        elif (
+            context.initial_margin_required / context.account_equity
+            > limits.maximum_margin_fraction
+        ):
             reasons.append("margin fraction exceeds limit")
 
     return RiskDecision(

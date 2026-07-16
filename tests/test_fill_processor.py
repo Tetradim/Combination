@@ -93,6 +93,25 @@ def test_execution_idempotency_prevents_double_mutation(
         instrument=instrument(),
     ) is False
 
+    duplicate_execution = BrokerOrderUpdate(
+        source="broker",
+        external_event_id="execution:1:replayed",
+        account_id="a1",
+        instrument_id="BTC-PERP",
+        client_order_id="o1",
+        update_type=OrderUpdateType.FILL,
+        occurred_at=datetime.now(timezone.utc),
+        broker_order_id="bo1",
+        execution_id="execution-1",
+        fill_quantity=Decimal("1"),
+        fill_price=Decimal("100"),
+        fee=Decimal("0.1"),
+    )
+    assert processor.process(
+        duplicate_execution,
+        instrument=instrument(),
+    ) is False
+
     with store.transaction() as transaction:
         position = transaction.get_position(
             account_id="a1",
