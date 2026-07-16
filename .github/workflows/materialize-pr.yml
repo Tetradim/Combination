@@ -1,8 +1,8 @@
 name: materialize-live-core-pr
 
 on:
-  issue_comment:
-    types: [created, edited]
+  pull_request:
+    types: [reopened]
 
 permissions:
   contents: write
@@ -10,9 +10,7 @@ permissions:
 
 jobs:
   materialize:
-    if: >-
-      github.event.issue.pull_request &&
-      github.event.comment.body == '/materialize-combination'
+    if: github.event.pull_request.head.ref == 'build/live-only-unified-core'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
