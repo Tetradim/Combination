@@ -37,10 +37,10 @@ jobs:
           find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
           tar -xJf /tmp/combination.tar.xz -C .
 
-      - name: Install
+      - name: Install complete broker surface
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -e ".[dev]"
+          python -m pip install -e ".[dev,all-brokers]"
 
       - name: Compile
         run: python -m compileall -q src tests
@@ -48,103 +48,13 @@ jobs:
       - name: Test full suite
         run: python -m pytest
 
-      - name: Create verified Git commit object
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPOSITORY: ${{ github.repository }}
+      - name: Commit and push verified source tree
         shell: bash
         run: |
           set -euo pipefail
-          python - <<'PY'
-          import json
-          import os
-          import subprocess
-          import tarfile
-          import traceback
-          import urllib.error
-          import urllib.request
-          from pathlib import Path
-
-          repository = os.environ["GH_REPOSITORY"]
-          token = os.environ["GH_TOKEN"]
-          api = f"https://api.github.com/repos/{repository}"
-          diagnostic = Path("/tmp/materialization-diagnostic.txt")
-          headers = {
-              "Accept": "application/vnd.github+json",
-              "Authorization": f"Bearer {token}",
-              "X-GitHub-Api-Version": "2022-11-28",
-              "Content-Type": "application/json",
-              "User-Agent": "sentinel-combination-materializer",
-          }
-
-          def post(path: str, payload: dict) -> dict:
-              request = urllib.request.Request(
-                  api + path,
-                  data=json.dumps(payload).encode("utf-8"),
-                  headers=headers,
-                  method="POST",
-              )
-              try:
-                  with urllib.request.urlopen(request) as response:
-                      return json.loads(response.read().decode("utf-8"))
-              except urllib.error.HTTPError as exc:
-                  body = exc.read().decode("utf-8", errors="replace")
-                  diagnostic.write_text(
-                      f"POST {path} failed: HTTP {exc.code}\n{body}\n",
-                      encoding="utf-8",
-                  )
-                  raise
-
-          try:
-              entries = []
-              with tarfile.open("/tmp/combination.tar.xz", mode="r:xz") as archive:
-                  for member in sorted(archive.getmembers(), key=lambda item: item.name):
-                      if not member.isfile():
-                          continue
-                      path = Path(member.name)
-                      content = path.read_text(encoding="utf-8")
-                      mode = "100755" if member.mode & 0o100 else "100644"
-                      entries.append(
-                          {
-                              "path": path.as_posix(),
-                              "mode": mode,
-                              "type": "blob",
-                              "content": content,
-                          }
-                      )
-
-              tree = post("/git/trees", {"tree": entries})
-              parent = subprocess.check_output(
-                  ["git", "rev-parse", "HEAD"], text=True
-              ).strip()
-              commit = post(
-                  "/git/commits",
-                  {
-                      "message": "Add futures brokerages and complete broker registry",
-                      "tree": tree["sha"],
-                      "parents": [parent],
-                  },
-              )
-              Path("/tmp/materialization-commit-sha.txt").write_text(
-                  commit["sha"] + "\n", encoding="utf-8"
-              )
-              diagnostic.write_text(
-                  f"created {len(entries)} source files\n"
-                  f"tree={tree['sha']}\ncommit={commit['sha']}\n",
-                  encoding="utf-8",
-              )
-              print(f"MATERIALIZED_COMMIT_SHA={commit['sha']}")
-          except Exception:
-              with diagnostic.open("a", encoding="utf-8") as handle:
-                  handle.write(traceback.format_exc())
-              raise
-          PY
-
-      - name: Upload materialization result
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: materialization-result
-          path: /tmp/materialization-*.txt
-          if-no-files-found: error
-          retention-days: 1
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m 'Add futures brokerages and complete broker registry'
+          git push origin HEAD:main
