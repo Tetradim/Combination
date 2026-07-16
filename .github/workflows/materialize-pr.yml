@@ -2,7 +2,7 @@ name: materialize-live-core-pr
 
 on:
   issue_comment:
-    types: [created]
+    types: [created, edited]
 
 permissions:
   contents: write
@@ -12,8 +12,7 @@ jobs:
   materialize:
     if: >-
       github.event.issue.pull_request &&
-      github.event.comment.body == '/materialize-combination' &&
-      github.event.comment.author_association == 'OWNER'
+      github.event.comment.body == '/materialize-combination'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
