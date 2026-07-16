@@ -1,1 +1,2 @@
 Exhaustive validation campaign trigger for 2026-07-16.
+Expanded public derivatives pass v2.
