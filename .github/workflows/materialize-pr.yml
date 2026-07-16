@@ -40,30 +40,13 @@ jobs:
       - name: Install
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -e .
+          python -m pip install -e ".[dev]"
 
       - name: Compile
         run: python -m compileall -q src tests
 
-      - name: Test instruments
-        run: python -m pytest -q tests/test_instruments.py
-      - name: Test readiness
-        run: python -m pytest -q tests/test_readiness.py
-      - name: Test lifecycle
-        run: python -m pytest -q tests/test_lifecycle.py
-      - name: Test positions
-        run: python -m pytest -q tests/test_positions.py
-      - name: Test brackets
-        run: python -m pytest -q tests/test_brackets.py
-      - name: Test fill processor
-        run: python -m pytest -q tests/test_fill_processor.py
-      - name: Test order gateway
-        run: python -m pytest -q tests/test_order_gateway.py
-      - name: Test risk
-        run: python -m pytest -q tests/test_risk.py
-
-      - name: Test remaining suite
-        run: python -m pytest -q tests/test_broker_catalog.py tests/test_registry.py tests/test_config.py tests/test_tastytrade.py tests/test_ccxt_presets.py tests/test_reconciliation.py tests/test_audit_chain.py tests/test_live_risk_hardening.py tests/test_api_auth.py tests/test_reversal_activation.py tests/test_active_bracket_management.py
+      - name: Test full suite
+        run: python -m pytest
 
       - name: Commit complete futures broker build
         shell: bash
