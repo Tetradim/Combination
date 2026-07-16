@@ -25,6 +25,32 @@ jobs:
           path: sentinel-archive
           fetch-depth: 1
 
+      - name: Publish workflow start heartbeat
+        if: github.event_name == 'pull_request'
+        shell: bash
+        env:
+          RESULTS_BRANCH: validation-results/archive-month-2026-07-16
+        run: |
+          set -euo pipefail
+          git -C combination config user.name 'github-actions[bot]'
+          git -C combination config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C combination fetch origin "+refs/heads/$RESULTS_BRANCH:refs/remotes/origin/$RESULTS_BRANCH"
+          git -C combination worktree add -B validation-heartbeat /tmp/validation-heartbeat "refs/remotes/origin/$RESULTS_BRANCH"
+          cat > /tmp/validation-heartbeat/RUNNING.md <<EOF
+          # Validation running
+
+          Workflow run: ${GITHUB_RUN_ID}
+
+          Combination: ${GITHUB_SHA}
+
+          Started: $(date -u +%Y-%m-%dT%H:%M:%SZ)
+          EOF
+          git -C /tmp/validation-heartbeat add RUNNING.md
+          git -C /tmp/validation-heartbeat commit -m 'Record Archive validation workflow start'
+          git -C /tmp/validation-heartbeat push origin "HEAD:$RESULTS_BRANCH"
+          git -C combination worktree remove --force /tmp/validation-heartbeat
+          git -C combination branch -D validation-heartbeat
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -126,7 +152,7 @@ jobs:
           cd combination
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git checkout --orphan "$RESULTS_BRANCH"
+          git checkout --orphan validation-evidence-publication
           git rm -rf .
           mkdir -p evidence
           cp -a /tmp/archive-validation-output/. evidence/
