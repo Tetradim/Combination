@@ -48,12 +48,86 @@ jobs:
       - name: Test full suite
         run: python -m pytest
 
-      - name: Commit verified futures broker build
+      - name: Create verified Git commit object
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPOSITORY: ${{ github.repository }}
         shell: bash
         run: |
           set -euo pipefail
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A
-          git commit -m 'Add futures brokerages and complete broker registry'
-          git push --force origin HEAD:refs/heads/materialized/futures-brokers
+          python - <<'PY'
+          import base64
+          import json
+          import os
+          import stat
+          import subprocess
+          import urllib.request
+          from pathlib import Path
+
+          repository = os.environ["GH_REPOSITORY"]
+          token = os.environ["GH_TOKEN"]
+          api = f"https://api.github.com/repos/{repository}"
+          headers = {
+              "Accept": "application/vnd.github+json",
+              "Authorization": f"Bearer {token}",
+              "X-GitHub-Api-Version": "2022-11-28",
+              "Content-Type": "application/json",
+              "User-Agent": "sentinel-combination-materializer",
+          }
+
+          def post(path: str, payload: dict) -> dict:
+              request = urllib.request.Request(
+                  api + path,
+                  data=json.dumps(payload).encode("utf-8"),
+                  headers=headers,
+                  method="POST",
+              )
+              with urllib.request.urlopen(request) as response:
+                  return json.loads(response.read().decode("utf-8"))
+
+          entries = []
+          for path in sorted(Path(".").rglob("*")):
+              if not path.is_file() or ".git" in path.parts:
+                  continue
+              raw = path.read_bytes()
+              blob = post(
+                  "/git/blobs",
+                  {
+                      "content": base64.b64encode(raw).decode("ascii"),
+                      "encoding": "base64",
+                  },
+              )
+              mode = "100755" if path.stat().st_mode & stat.S_IXUSR else "100644"
+              entries.append(
+                  {
+                      "path": path.as_posix(),
+                      "mode": mode,
+                      "type": "blob",
+                      "sha": blob["sha"],
+                  }
+              )
+
+          tree = post("/git/trees", {"tree": entries})
+          parent = subprocess.check_output(
+              ["git", "rev-parse", "HEAD"], text=True
+          ).strip()
+          commit = post(
+              "/git/commits",
+              {
+                  "message": "Add futures brokerages and complete broker registry",
+                  "tree": tree["sha"],
+                  "parents": [parent],
+              },
+          )
+          Path("/tmp/materialized-commit-sha.txt").write_text(
+              commit["sha"] + "\n", encoding="utf-8"
+          )
+          print(f"MATERIALIZED_COMMIT_SHA={commit['sha']}")
+          PY
+
+      - name: Upload verified commit SHA
+        uses: actions/upload-artifact@v4
+        with:
+          name: materialized-commit-sha
+          path: /tmp/materialized-commit-sha.txt
+          retention-days: 1
