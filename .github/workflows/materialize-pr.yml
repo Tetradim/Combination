@@ -1,4 +1,4 @@
-name: materialize-live-core-pr
+name: materialize-futures-broker-main
 
 on:
   pull_request:
@@ -15,42 +15,33 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: build/live-only-unified-core
+          ref: main
           fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Verify and materialize repository tree
+      - name: Rebuild and verify complete source tree
         shell: bash
         run: |
           set -euo pipefail
-          test -f .bootstrap/combination-tree.tar.xz
-          archive="$(mktemp)"
-          cp .bootstrap/combination-tree.tar.xz "$archive"
-          echo "42c36c1f932a7c1ceb593b71b839d78a12a6bae9423dd9c1e163498131afbfc9  $archive" | sha256sum -c -
+          cat .bootstrap/chunk00 .bootstrap/chunk01 .bootstrap/chunk02 .bootstrap/chunk03 .bootstrap/chunk04 .bootstrap/chunk05 .bootstrap/chunk06 > /tmp/combination.b64
+          base64 -d /tmp/combination.b64 > /tmp/combination.tar.xz
+          echo "ae20d32e60e412fe66d23b569ff4037f801601d802ffc6898218434841d33294  /tmp/combination.tar.xz" | sha256sum -c -
           find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
-          tar -xJf "$archive" -C .
-          rm -f "$archive"
-
-      - name: Install production adapter and test dependencies
-        run: |
+          tar -xJf /tmp/combination.tar.xz -C .
           python -m pip install --upgrade pip
-          python -m pip install -e '.[dev,alpaca]'
-
-      - name: Compile and test complete backend
-        run: |
+          python -m pip install -e .
           python -m compileall -q src tests
           python -m pytest
 
-      - name: Commit verified tree
+      - name: Commit complete futures broker build
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
-          git diff --cached --quiet && exit 0
-          git commit -m 'Complete live-only broker testing candidate'
-          git push origin HEAD:build/live-only-unified-core
+          git commit -m 'Add futures brokerages and complete broker registry'
+          git push origin HEAD:main
