@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sentinel-combination"
-version = "0.1.0"
-description = "Experimental integration laboratory for Sentinel Chain and Sentinel Iron."
+version = "0.2.0"
+description = "Live-only, broker-authoritative multi-asset trading backend derived from Sentinel Chain and Sentinel Iron."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []

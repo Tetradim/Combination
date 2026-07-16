@@ -1,83 +1,49 @@
-# Combination
+# Sentinel Combination
 
-Combination is an experimental integration laboratory for **Sentinel Chain** and **Sentinel Iron**.
+Sentinel Combination is a new, independently evolving trading backend derived from the strongest ideas in Sentinel Chain and Sentinel Iron.
 
-It keeps both source projects independent while pinning their complete implementations into one reproducible superproject:
+It is **not** a wrapper around the two source bots. It is a single backend with:
 
-- `components/sentinel-chain` — the full Sentinel Chain crypto automation, synthetic bracket, paper execution, backtesting, API, and operator UI implementation.
-- `components/sentinel-iron` — the full Sentinel Iron listed-futures domain, broker lifecycle, reconciliation, margin, risk, portfolio targeting, audit, and emergency-control implementation.
-- `src/sentinel_combination` — a thin integration facade, launcher, capability inventory, and experiment boundary.
+- Chain-derived signal normalization and advanced bracket intent;
+- Iron-derived broker-authoritative order lifecycle, fill idempotency, readiness, reconciliation, margin discipline, and emergency controls;
+- one canonical instrument model for crypto spot, crypto perpetuals, and listed futures;
+- one durable event journal and position ledger;
+- one execution path for every connected brokerage or exchange account.
 
-The original repositories remain unchanged and can continue to diverge. Combination pins exact source commits so experiments are reproducible and upgrades are explicit.
+## Execution policy
 
-## Safety boundary
+Combination contains no deployable fake exchange, internal paper engine, simulated fill mode, or shadow-routing mode.
 
-Combination does **not** automatically enable autonomous live trading. Sentinel Chain retains its paper-first behavior. Sentinel Iron retains its live activation, readiness, reconciliation, risk, margin, broker, lifecycle, audit, kill-switch, and operator-confirmation gates.
+A brokerage sandbox or paper account is supported only because it uses the broker's real API, order acknowledgements, lifecycle updates, and fills through the same adapter path as a funded account. The backend does not branch into a separate fake-money implementation.
 
-## Clone
+## Current build status
 
-```bash
-git clone --recurse-submodules https://github.com/Tetradim/Combination.git
-cd Combination
-python scripts/bootstrap.py --dev
-```
+The `build/live-only-unified-core` branch begins the independent backend. The first slice contains:
 
-For an existing clone:
+- canonical instruments and precision rules;
+- versioned bracket plans;
+- explicit order lifecycle states;
+- broker/exchange adapter protocols;
+- readiness gates;
+- pre-trade risk decisions;
+- execution-ID idempotency;
+- fill-authoritative position accounting;
+- durable SQLite transactions and event journal;
+- an order gateway that cannot bypass readiness or risk.
 
-```bash
-git submodule update --init --recursive
-python scripts/bootstrap.py --dev
-```
+No broker adapter is certified yet. Until an adapter passes the required lifecycle, reconciliation, margin, and failure-contract tests, the code must not be represented as ready for unrestricted funded trading.
 
-Windows PowerShell:
-
-```powershell
-.\scripts\bootstrap.ps1 -Dev
-```
-
-## Unified CLI
+## Install
 
 ```bash
-combination doctor --strict
-combination capabilities
-combination pins
-combination chain --host 127.0.0.1 --port 8004
-combination iron -- --help
-combination test-all
+python -m pip install -e ".[dev]"
+combination init-db --path data/combination.sqlite3
+combination doctor --path data/combination.sqlite3
+python -m pytest
 ```
 
-The facade delegates to the original packages rather than duplicating their domain logic. This keeps experimental glue removable and makes it clear whether a behavior originates in Chain, Iron, or Combination.
+## Design records
 
-## Architecture
-
-```text
-Combination
-├── components/
-│   ├── sentinel-chain/   # pinned full upstream repository
-│   └── sentinel-iron/    # pinned full upstream repository
-├── src/sentinel_combination/
-│   ├── capabilities.py   # feature/provenance registry
-│   ├── components.py     # pin and path definitions
-│   ├── contracts.py      # neutral cross-bot experiment contracts
-│   ├── runtime.py        # subprocess isolation and delegation
-│   └── cli.py            # unified operator entry point
-├── docs/
-│   ├── ARCHITECTURE.md
-│   ├── FEATURE_MATRIX.md
-│   └── EXPERIMENTS.md
-└── scripts/
-    ├── bootstrap.py
-    └── bootstrap.ps1
-```
-
-## Why submodules
-
-Git submodules are intentional here:
-
-1. Every source feature is present at an exact commit.
-2. Chain and Iron can evolve independently.
-3. Combination can test upgrades one source at a time.
-4. Provenance remains obvious during debugging.
-5. Integration code cannot silently rewrite either bot.
-
-See `combination.lock.json` for the pinned repositories and commits, and `docs/FEATURE_MATRIX.md` for the capability inventory.
+- `docs/LIVE_ONLY_BUILD_PLAN.md`
+- `docs/ARCHITECTURE.md`
+- `docs/PROVENANCE.md`

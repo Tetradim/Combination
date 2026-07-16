@@ -1,15 +1,25 @@
-"""Integration facade for the Sentinel Chain and Sentinel Iron experiment."""
+"""Live-only broker-authoritative trading backend."""
 
-from .components import COMPONENTS, ComponentPin
-from .contracts import AssetClass, ExperimentEnvelope, ExperimentMode, InstrumentRef
+from .domain.brackets import BracketPlan, ProtectiveStop, TakeProfitTarget, TrailingRule
+from .domain.enums import AssetClass, OrderStatus, OrderType, Side
+from .domain.instruments import Instrument
+from .domain.orders import BrokerOrderUpdate, OrderIntent, OrderLifecycle
+from .domain.readiness import ReadinessSnapshot
 
 __all__ = [
     "AssetClass",
-    "COMPONENTS",
-    "ComponentPin",
-    "ExperimentEnvelope",
-    "ExperimentMode",
-    "InstrumentRef",
+    "BracketPlan",
+    "BrokerOrderUpdate",
+    "Instrument",
+    "OrderIntent",
+    "OrderLifecycle",
+    "OrderStatus",
+    "OrderType",
+    "ProtectiveStop",
+    "ReadinessSnapshot",
+    "Side",
+    "TakeProfitTarget",
+    "TrailingRule",
 ]
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"

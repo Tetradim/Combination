@@ -1,8 +1,7 @@
-name: combination-ci
+name: combination-live-core-ci
 
 on:
   push:
-    branches: [main]
   pull_request:
 
 jobs:
@@ -10,32 +9,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 1
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: pip
 
-      - name: Install Combination and components
+      - name: Install
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -e ".[dev]" -e "components/sentinel-chain[dev]" -e "components/sentinel-iron[dev]"
+          python -m pip install -e ".[dev]"
 
-      - name: Verify pins and imports
-        run: combination doctor --strict
+      - name: Compile
+        run: python -m compileall -q src
 
-      - name: Test Combination
-        run: python -m pytest tests
-
-      - name: Test Sentinel Chain
-        run: python -m pytest components/sentinel-chain/tests
-        env:
-          PYTHONPATH: components/sentinel-chain/src
-
-      - name: Test Sentinel Iron
-        run: python -m pytest components/sentinel-iron/tests
-        env:
-          PYTHONPATH: components/sentinel-iron/src
+      - name: Test
+        run: python -m pytest

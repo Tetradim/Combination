@@ -1,19 +1,13 @@
-.PHONY: bootstrap doctor test test-all chain iron
+.PHONY: install test init-db doctor
 
-bootstrap:
-	python scripts/bootstrap.py --dev
-
-doctor:
-	combination doctor --strict
+install:
+	python -m pip install -e ".[dev]"
 
 test:
-	python -m pytest tests
+	python -m pytest
 
-test-all:
-	combination test-all
+init-db:
+	combination init-db --path data/combination.sqlite3
 
-chain:
-	combination chain --host 127.0.0.1 --port 8004
-
-iron:
-	combination iron -- --help
+doctor:
+	combination doctor --path data/combination.sqlite3

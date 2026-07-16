@@ -13,5 +13,8 @@ dist/
 *.egg-info/
 data/
 logs/
+*.db
+*.sqlite
+*.sqlite3
 .DS_Store
 Thumbs.db
