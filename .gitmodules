@@ -1,0 +1,8 @@
+[submodule "components/sentinel-chain"]
+	path = components/sentinel-chain
+	url = https://github.com/Tetradim/Sentinel-Chain.git
+	branch = main
+[submodule "components/sentinel-iron"]
+	path = components/sentinel-iron
+	url = https://github.com/Tetradim/Sentinel-Iron.git
+	branch = main

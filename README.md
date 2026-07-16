@@ -4,15 +4,15 @@ Combination is an experimental integration laboratory for **Sentinel Chain** and
 
 It keeps both source projects independent while pinning their complete implementations into one reproducible superproject:
 
-- `components/sentinel-chain` — the current Sentinel Chain crypto automation, synthetic bracket, paper execution, backtesting, API, and operator UI implementation.
-- `components/sentinel-iron` — the current Sentinel Iron listed-futures domain, broker lifecycle, reconciliation, margin, risk, portfolio targeting, audit, and emergency-control implementation.
-- `src/sentinel_combination` — a deliberately thin integration facade, launcher, capability inventory, and experiment boundary.
+- `components/sentinel-chain` — the full Sentinel Chain crypto automation, synthetic bracket, paper execution, backtesting, API, and operator UI implementation.
+- `components/sentinel-iron` — the full Sentinel Iron listed-futures domain, broker lifecycle, reconciliation, margin, risk, portfolio targeting, audit, and emergency-control implementation.
+- `src/sentinel_combination` — a thin integration facade, launcher, capability inventory, and experiment boundary.
 
 The original repositories remain unchanged and can continue to diverge. Combination pins exact source commits so experiments are reproducible and upgrades are explicit.
 
 ## Safety boundary
 
-Combination does **not** automatically enable autonomous live trading. Sentinel Chain retains its paper-first behavior, and Sentinel Iron retains its live activation, readiness, reconciliation, risk, margin, broker, lifecycle, audit, kill-switch, and operator-confirmation gates.
+Combination does **not** automatically enable autonomous live trading. Sentinel Chain retains its paper-first behavior. Sentinel Iron retains its live activation, readiness, reconciliation, risk, margin, broker, lifecycle, audit, kill-switch, and operator-confirmation gates.
 
 ## Clone
 
@@ -80,4 +80,4 @@ Git submodules are intentional here:
 4. Provenance remains obvious during debugging.
 5. Integration code cannot silently rewrite either bot.
 
-See `combination.lock.json` for the pinned repositories and commits, and `docs/FEATURE_MATRIX.md` for the integrated capability inventory.
+See `combination.lock.json` for the pinned repositories and commits, and `docs/FEATURE_MATRIX.md` for the capability inventory.

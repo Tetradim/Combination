@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "components": {
+    "sentinel-chain": {
+      "repository": "https://github.com/Tetradim/Sentinel-Chain.git",
+      "branch": "main",
+      "commit": "6b8af3675cc4ecf6cea879f740d614764805756c",
+      "path": "components/sentinel-chain"
+    },
+    "sentinel-iron": {
+      "repository": "https://github.com/Tetradim/Sentinel-Iron.git",
+      "branch": "main",
+      "commit": "f26c1c2010f1c2e94a13147f58d6dd99c6c9bb21",
+      "path": "components/sentinel-iron"
+    }
+  }
+}
