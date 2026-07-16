@@ -1,0 +1,372 @@
+name: exhaustive-combination-validation
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  compatibility:
+    name: compatibility-python-${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Prepare evidence directory
+        shell: bash
+        run: |
+          mkdir -p validation-evidence
+          printf '%s\n' "python=${{ matrix.python-version }}" > validation-evidence/environment.txt
+          python -VV >> validation-evidence/environment.txt 2>&1
+          uname -a >> validation-evidence/environment.txt 2>&1
+          git rev-parse HEAD > validation-evidence/combination-commit.txt
+
+      - name: Install complete dependency surface
+        id: install
+        continue-on-error: true
+        shell: bash
+        run: |
+          set +e
+          python -m pip install --upgrade pip wheel setuptools > validation-evidence/install-bootstrap.log 2>&1
+          bootstrap_rc=$?
+          python -m pip install -e ".[dev,all-brokers]" > validation-evidence/install-project.log 2>&1
+          project_rc=$?
+          python -m pip freeze > validation-evidence/pip-freeze.txt 2>&1
+          printf 'bootstrap=%s\nproject=%s\n' "$bootstrap_rc" "$project_rc" > validation-evidence/install-exit-codes.txt
+          exit "$project_rc"
+
+      - name: Dependency consistency
+        continue-on-error: true
+        shell: bash
+        run: |
+          set +e
+          python -m pip check > validation-evidence/pip-check.log 2>&1
+          echo $? > validation-evidence/pip-check.exit
+          exit 0
+
+      - name: Compile every source and test module
+        continue-on-error: true
+        shell: bash
+        run: |
+          set +e
+          python -m compileall -f -q src tests scripts > validation-evidence/compile.log 2>&1
+          echo $? > validation-evidence/compile.exit
+          exit 0
+
+      - name: Collect test inventory
+        continue-on-error: true
+        shell: bash
+        run: |
+          set +e
+          python -m pytest --collect-only -q > validation-evidence/pytest-collection.log 2>&1
+          echo $? > validation-evidence/pytest-collection.exit
+          exit 0
+
+      - name: Run standard suite with JUnit evidence
+        continue-on-error: true
+        shell: bash
+        run: |
+          set +e
+          python -m pytest -ra --durations=30 --junitxml=validation-evidence/pytest-standard.xml > validation-evidence/pytest-standard.log 2>&1
+          echo $? > validation-evidence/pytest-standard.exit
+          exit 0
+
+      - name: Run randomized-order and hash-seed suites
+        continue-on-error: true
+        shell: bash
+        run: |
+          set +e
+          python -m pip install pytest-randomly > validation-evidence/install-pytest-randomly.log 2>&1
+          install_rc=$?
+          echo "$install_rc" > validation-evidence/install-pytest-randomly.exit
+          for seed in 1 7 42 2026 65537; do
+            PYTHONHASHSEED="$seed" python -m pytest -q --randomly-seed="$seed" > "validation-evidence/pytest-seed-${seed}.log" 2>&1
+            echo $? > "validation-evidence/pytest-seed-${seed}.exit"
+          done
+          exit 0
+
+      - name: Run package, catalog, CLI, database, and replay-schema campaign
+        continue-on-error: true
+        shell: bash
+        run: |
+          set +e
+          python scripts/validation_campaign.py --output validation-evidence/campaign > validation-evidence/campaign-console.log 2>&1
+          echo $? > validation-evidence/campaign.exit
+          exit 0
+
+      - name: Build compatibility summary
+        if: always()
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('validation-evidence')
+          exits = {}
+          for path in sorted(root.rglob('*.exit')):
+              exits[str(path.relative_to(root))] = path.read_text(errors='replace').strip()
+          payload = {
+              'python': '${{ matrix.python-version }}',
+              'commit': (root / 'combination-commit.txt').read_text().strip(),
+              'exit_codes': exits,
+          }
+          (root / 'compatibility-summary.json').write_text(json.dumps(payload, indent=2), encoding='utf-8')
+          print(json.dumps(payload, indent=2))
+          PY
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: compatibility-python-${{ matrix.python-version }}
+          path: validation-evidence
+          retention-days: 30
+
+      - name: Enforce critical compatibility checks
+        if: always()
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          critical = [
+              Path('validation-evidence/install-exit-codes.txt'),
+              Path('validation-evidence/compile.exit'),
+              Path('validation-evidence/pytest-standard.exit'),
+              Path('validation-evidence/campaign.exit'),
+          ]
+          failures = []
+          for path in critical:
+              if not path.exists():
+                  failures.append(f'{path}: missing')
+                  continue
+              text = path.read_text(errors='replace')
+              if path.name == 'install-exit-codes.txt':
+                  if 'project=0' not in text:
+                      failures.append(f'{path}: {text.strip()}')
+              elif text.strip() != '0':
+                  failures.append(f'{path}: {text.strip()}')
+          if failures:
+              raise SystemExit('Critical compatibility failures:\n' + '\n'.join(failures))
+          PY
+
+  stress:
+    name: repeated-state-and-ordering-stress
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip wheel setuptools
+          python -m pip install -e ".[dev,all-brokers]"
+          python -m pip install pytest-randomly
+
+      - name: Repeat complete suite under varied ordering
+        continue-on-error: true
+        shell: bash
+        run: |
+          mkdir -p stress-evidence
+          set +e
+          failures=0
+          for seed in 3 5 11 17 23 31 47 59 71 89 101 131 167 199 257 313 401 509 631 809; do
+            PYTHONHASHSEED="$seed" python -m pytest -q --randomly-seed="$seed" > "stress-evidence/full-suite-${seed}.log" 2>&1
+            rc=$?
+            echo "$rc" > "stress-evidence/full-suite-${seed}.exit"
+            if [ "$rc" -ne 0 ]; then failures=$((failures + 1)); fi
+          done
+          echo "$failures" > stress-evidence/full-suite-failure-count.txt
+          exit 0
+
+      - name: Repeated database initialization and restart checks
+        continue-on-error: true
+        shell: bash
+        run: |
+          set +e
+          mkdir -p stress-evidence/databases
+          failures=0
+          for n in $(seq 1 30); do
+            db="stress-evidence/databases/combination-${n}.sqlite3"
+            combination init-db --path "$db" > "stress-evidence/db-${n}-init.log" 2>&1
+            init_rc=$?
+            combination doctor --path "$db" > "stress-evidence/db-${n}-doctor-1.log" 2>&1
+            doctor1_rc=$?
+            combination doctor --path "$db" > "stress-evidence/db-${n}-doctor-2.log" 2>&1
+            doctor2_rc=$?
+            printf 'init=%s\ndoctor1=%s\ndoctor2=%s\n' "$init_rc" "$doctor1_rc" "$doctor2_rc" > "stress-evidence/db-${n}.exit"
+            if [ "$init_rc" -ne 0 ] || [ "$doctor1_rc" -ne 0 ] || [ "$doctor2_rc" -ne 0 ]; then failures=$((failures + 1)); fi
+          done
+          echo "$failures" > stress-evidence/database-failure-count.txt
+          exit 0
+
+      - name: Repeated module import and CLI enumeration
+        continue-on-error: true
+        shell: bash
+        run: |
+          set +e
+          failures=0
+          for n in $(seq 1 100); do
+            python -c 'import sentinel_combination; from sentinel_combination.brokers.catalog import list_broker_companies; assert list(list_broker_companies())' > "stress-evidence/import-${n}.log" 2>&1
+            rc=$?
+            if [ "$rc" -ne 0 ]; then failures=$((failures + 1)); fi
+          done
+          echo "$failures" > stress-evidence/import-failure-count.txt
+          combination brokers > stress-evidence/brokers.log 2>&1
+          echo $? > stress-evidence/brokers.exit
+          exit 0
+
+      - name: Summarize stress campaign
+        if: always()
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('stress-evidence')
+          payload = {
+              'suite_runs': 20,
+              'suite_failures': int((root / 'full-suite-failure-count.txt').read_text().strip()),
+              'database_cycles': 30,
+              'database_failures': int((root / 'database-failure-count.txt').read_text().strip()),
+              'import_cycles': 100,
+              'import_failures': int((root / 'import-failure-count.txt').read_text().strip()),
+          }
+          (root / 'stress-summary.json').write_text(json.dumps(payload, indent=2), encoding='utf-8')
+          (root / 'STRESS_REPORT.md').write_text(
+              '# Stress validation\n\n'
+              f"- Full-suite runs: {payload['suite_runs']}\n"
+              f"- Full-suite failures: {payload['suite_failures']}\n"
+              f"- Database restart cycles: {payload['database_cycles']}\n"
+              f"- Database failures: {payload['database_failures']}\n"
+              f"- Import cycles: {payload['import_cycles']}\n"
+              f"- Import failures: {payload['import_failures']}\n",
+              encoding='utf-8',
+          )
+          print(json.dumps(payload, indent=2))
+          PY
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: stress-validation
+          path: stress-evidence
+          retention-days: 30
+
+      - name: Enforce stress checks
+        if: always()
+        shell: bash
+        run: |
+          test "$(cat stress-evidence/full-suite-failure-count.txt)" = "0"
+          test "$(cat stress-evidence/database-failure-count.txt)" = "0"
+          test "$(cat stress-evidence/import-failure-count.txt)" = "0"
+          test "$(cat stress-evidence/brokers.exit)" = "0"
+
+  archive-and-live-market:
+    name: sentinel-archive-and-public-live-market
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/checkout@v4
+        with:
+          repository: Tetradim/Sentinel-Archive
+          ref: main
+          path: sentinel-archive
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Combination and Archive dependencies
+        continue-on-error: true
+        shell: bash
+        run: |
+          mkdir -p integration-evidence
+          set +e
+          python -m pip install --upgrade pip wheel setuptools > integration-evidence/install-bootstrap.log 2>&1
+          python -m pip install -e ".[dev,all-brokers]" > integration-evidence/install-combination.log 2>&1
+          combination_rc=$?
+          if [ -f sentinel-archive/requirements-dev.txt ]; then
+            python -m pip install -r sentinel-archive/requirements-dev.txt > integration-evidence/install-archive.log 2>&1
+            archive_rc=$?
+          else
+            archive_rc=127
+            echo 'requirements-dev.txt not found' > integration-evidence/install-archive.log
+          fi
+          printf 'combination=%s\narchive=%s\n' "$combination_rc" "$archive_rc" > integration-evidence/install.exit
+          python -m pip freeze > integration-evidence/pip-freeze.txt 2>&1
+          exit 0
+
+      - name: Run Sentinel Archive test suite
+        continue-on-error: true
+        shell: bash
+        run: |
+          set +e
+          if [ -d sentinel-archive/tests ]; then
+            python -m pytest -ra --durations=30 --junitxml=integration-evidence/archive-tests.xml sentinel-archive/tests > integration-evidence/archive-tests.log 2>&1
+            echo $? > integration-evidence/archive-tests.exit
+          else
+            echo 127 > integration-evidence/archive-tests.exit
+            echo 'Archive tests directory not found' > integration-evidence/archive-tests.log
+          fi
+          exit 0
+
+      - name: Run Archive compatibility and public live derivatives checks
+        continue-on-error: true
+        shell: bash
+        run: |
+          set +e
+          python scripts/validation_campaign.py \
+            --output integration-evidence/campaign \
+            --archive-path sentinel-archive \
+            --live-market > integration-evidence/campaign-console.log 2>&1
+          echo $? > integration-evidence/campaign.exit
+          exit 0
+
+      - name: Record repository and data provenance
+        if: always()
+        shell: bash
+        run: |
+          git rev-parse HEAD > integration-evidence/combination-commit.txt
+          git -C sentinel-archive rev-parse HEAD > integration-evidence/archive-commit.txt
+          find sentinel-archive -type f \( -name '*.csv' -o -name '*.jsonl' \) -print | sort > integration-evidence/archive-data-files.txt
+          sha256sum integration-evidence/campaign/validation-results.json > integration-evidence/campaign-results.sha256 2>/dev/null || true
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: archive-and-live-market-validation
+          path: integration-evidence
+          retention-days: 30
+
+      - name: Enforce integration runner completion
+        if: always()
+        shell: bash
+        run: |
+          test "$(cat integration-evidence/campaign.exit)" = "0"
