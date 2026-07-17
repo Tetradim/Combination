@@ -1,0 +1,14 @@
+{
+  "scenarios": 6,
+  "scenario_passed": 6,
+  "market_runs": 648,
+  "symbols": [
+    "BTC-USD",
+    "CL=F",
+    "ES=F",
+    "ETH-USD",
+    "GC=F",
+    "NQ=F"
+  ],
+  "failures": 0
+}

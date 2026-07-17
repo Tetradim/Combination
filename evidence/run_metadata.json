@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-07-17T00:48:03.843387+00:00",
+  "python": "3.11.15 (main, Jun 16 2026, 21:41:52) [GCC 13.3.0]",
+  "platform": "Linux-6.17.0-1020-azure-x86_64-with-glibc2.39",
+  "combination_sha": "45e350fd44024965f2ef8f367bc06d6bc605c2ca",
+  "archive_sha": "44aa4337cfb15aeb562a874b8dbc3fa799149f18",
+  "campaign": "archive_market_validation_v1",
+  "data": {
+    "ES=F": {
+      "provider": "Yahoo Finance via yfinance",
+      "requested_period": "1mo",
+      "requested_interval": "1h",
+      "rows": 473,
+      "first_timestamp": "2026-06-17T00:00:00+00:00",
+      "last_timestamp": "2026-07-17T00:00:00+00:00",
+      "downloaded_at": "2026-07-17T00:48:05.757100+00:00"
+    },
+    "NQ=F": {
+      "provider": "Yahoo Finance via yfinance",
+      "requested_period": "1mo",
+      "requested_interval": "1h",
+      "rows": 473,
+      "first_timestamp": "2026-06-17T00:00:00+00:00",
+      "last_timestamp": "2026-07-17T00:00:00+00:00",
+      "downloaded_at": "2026-07-17T00:48:06.171982+00:00"
+    },
+    "CL=F": {
+      "provider": "Yahoo Finance via yfinance",
+      "requested_period": "1mo",
+      "requested_interval": "1h",
+      "rows": 473,
+      "first_timestamp": "2026-06-17T00:00:00+00:00",
+      "last_timestamp": "2026-07-17T00:00:00+00:00",
+      "downloaded_at": "2026-07-17T00:48:06.594567+00:00"
+    },
+    "GC=F": {
+      "provider": "Yahoo Finance via yfinance",
+      "requested_period": "1mo",
+      "requested_interval": "1h",
+      "rows": 473,
+      "first_timestamp": "2026-06-17T00:00:00+00:00",
+      "last_timestamp": "2026-07-17T00:00:00+00:00",
+      "downloaded_at": "2026-07-17T00:48:06.992973+00:00"
+    },
+    "BTC-USD": {
+      "provider": "Yahoo Finance via yfinance",
+      "requested_period": "1mo",
+      "requested_interval": "1h",
+      "rows": 719,
+      "first_timestamp": "2026-06-17T00:00:00+00:00",
+      "last_timestamp": "2026-07-17T00:00:00+00:00",
+      "downloaded_at": "2026-07-17T00:48:07.428185+00:00"
+    },
+    "ETH-USD": {
+      "provider": "Yahoo Finance via yfinance",
+      "requested_period": "1mo",
+      "requested_interval": "1h",
+      "rows": 719,
+      "first_timestamp": "2026-06-17T00:00:00+00:00",
+      "last_timestamp": "2026-07-17T00:00:00+00:00",
+      "downloaded_at": "2026-07-17T00:48:07.856283+00:00"
+    }
+  },
+  "failures": [],
+  "settings_count": 108
+}

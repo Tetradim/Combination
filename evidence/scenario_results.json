@@ -1,0 +1,414 @@
+[
+  {
+    "name": "take_profit_exit",
+    "passed": true,
+    "expected_action": "take_profit_sell",
+    "decision_actions": [
+      "take_profit_sell",
+      "buy"
+    ],
+    "ending_equity": 100050.0,
+    "open_positions": 0,
+    "handoffs": [
+      {
+        "step": 0,
+        "payload": {
+          "contract_version": "edge.pulse.handoff.v1",
+          "symbol": "TEST",
+          "action": "buy",
+          "confidence": 1.0,
+          "reason": "archive_validation_campaign",
+          "mode": "paper",
+          "orb_session": "market_open",
+          "idempotency_key": "tp-buy",
+          "source": "sentinel_edge",
+          "created_at": 1784249283.8461268,
+          "metadata": {
+            "quantity": 10
+          }
+        },
+        "response": {
+          "accepted": true,
+          "status": "accepted",
+          "reason": "pulse_accepted",
+          "handoff_id": "tp-buy",
+          "message": "buy accepted: pulse_accepted"
+        }
+      }
+    ],
+    "event_log": [
+      {
+        "timestamp": 1784249283.8461905,
+        "event_type": "replay_imported",
+        "session_id": "replay-569e5bae4463",
+        "symbols": [
+          "TEST"
+        ],
+        "bar_count": 2
+      },
+      {
+        "timestamp": 1784249283.846198,
+        "event_type": "replay_started",
+        "session_id": "replay-569e5bae4463",
+        "speed": 1.0,
+        "loop": false
+      },
+      {
+        "timestamp": 1784249283.8463862,
+        "event_type": "handoff",
+        "symbol": "TEST",
+        "action": "buy",
+        "accepted": true,
+        "status": "accepted",
+        "reason": "pulse_accepted",
+        "handoff_id": "tp-buy",
+        "message": "buy accepted: pulse_accepted"
+      }
+    ]
+  },
+  {
+    "name": "regular_stop_exit",
+    "passed": true,
+    "expected_action": "regular_stop_sell",
+    "decision_actions": [
+      "regular_stop_sell",
+      "buy"
+    ],
+    "ending_equity": 99970.0,
+    "open_positions": 0,
+    "handoffs": [
+      {
+        "step": 0,
+        "payload": {
+          "contract_version": "edge.pulse.handoff.v1",
+          "symbol": "TEST",
+          "action": "buy",
+          "confidence": 1.0,
+          "reason": "archive_validation_campaign",
+          "mode": "paper",
+          "orb_session": "market_open",
+          "idempotency_key": "stop-buy",
+          "source": "sentinel_edge",
+          "created_at": 1784249283.8464973,
+          "metadata": {
+            "quantity": 10
+          }
+        },
+        "response": {
+          "accepted": true,
+          "status": "accepted",
+          "reason": "pulse_accepted",
+          "handoff_id": "stop-buy",
+          "message": "buy accepted: pulse_accepted"
+        }
+      }
+    ],
+    "event_log": [
+      {
+        "timestamp": 1784249283.846519,
+        "event_type": "replay_imported",
+        "session_id": "replay-6451307c947d",
+        "symbols": [
+          "TEST"
+        ],
+        "bar_count": 2
+      },
+      {
+        "timestamp": 1784249283.846523,
+        "event_type": "replay_started",
+        "session_id": "replay-6451307c947d",
+        "speed": 1.0,
+        "loop": false
+      },
+      {
+        "timestamp": 1784249283.8465893,
+        "event_type": "handoff",
+        "symbol": "TEST",
+        "action": "buy",
+        "accepted": true,
+        "status": "accepted",
+        "reason": "pulse_accepted",
+        "handoff_id": "stop-buy",
+        "message": "buy accepted: pulse_accepted"
+      }
+    ]
+  },
+  {
+    "name": "trailing_stop_activation_and_exit",
+    "passed": true,
+    "expected_action": "trailing_stop_sell",
+    "decision_actions": [
+      "trailing_stop_sell",
+      "trailing_stop",
+      "buy"
+    ],
+    "ending_equity": 100078.0,
+    "open_positions": 0,
+    "handoffs": [
+      {
+        "step": 0,
+        "payload": {
+          "contract_version": "edge.pulse.handoff.v1",
+          "symbol": "TEST",
+          "action": "buy",
+          "confidence": 1.0,
+          "reason": "archive_validation_campaign",
+          "mode": "paper",
+          "orb_session": "market_open",
+          "idempotency_key": "trail-buy",
+          "source": "sentinel_edge",
+          "created_at": 1784249283.8466697,
+          "metadata": {
+            "quantity": 10
+          }
+        },
+        "response": {
+          "accepted": true,
+          "status": "accepted",
+          "reason": "pulse_accepted",
+          "handoff_id": "trail-buy",
+          "message": "buy accepted: pulse_accepted"
+        }
+      },
+      {
+        "step": 0,
+        "payload": {
+          "contract_version": "edge.pulse.handoff.v1",
+          "symbol": "TEST",
+          "action": "trailing_stop",
+          "confidence": 1.0,
+          "reason": "archive_validation_campaign",
+          "mode": "paper",
+          "orb_session": "market_open",
+          "idempotency_key": "trail-enable",
+          "source": "sentinel_edge",
+          "created_at": 1784249283.8466706,
+          "metadata": {},
+          "trailing_percent": 2
+        },
+        "response": {
+          "accepted": true,
+          "status": "accepted",
+          "reason": "pulse_accepted",
+          "handoff_id": "trail-enable",
+          "message": "trailing_stop accepted: pulse_accepted"
+        }
+      }
+    ],
+    "event_log": [
+      {
+        "timestamp": 1784249283.846689,
+        "event_type": "replay_imported",
+        "session_id": "replay-b2af1fa19aae",
+        "symbols": [
+          "TEST"
+        ],
+        "bar_count": 3
+      },
+      {
+        "timestamp": 1784249283.8466935,
+        "event_type": "replay_started",
+        "session_id": "replay-b2af1fa19aae",
+        "speed": 1.0,
+        "loop": false
+      },
+      {
+        "timestamp": 1784249283.846779,
+        "event_type": "handoff",
+        "symbol": "TEST",
+        "action": "buy",
+        "accepted": true,
+        "status": "accepted",
+        "reason": "pulse_accepted",
+        "handoff_id": "trail-buy",
+        "message": "buy accepted: pulse_accepted"
+      },
+      {
+        "timestamp": 1784249283.846835,
+        "event_type": "handoff",
+        "symbol": "TEST",
+        "action": "trailing_stop",
+        "accepted": true,
+        "status": "accepted",
+        "reason": "pulse_accepted",
+        "handoff_id": "trail-enable",
+        "message": "trailing_stop accepted: pulse_accepted"
+      }
+    ]
+  },
+  {
+    "name": "tightened_trailing_stop_exit",
+    "passed": true,
+    "expected_action": "trailing_stop_sell",
+    "decision_actions": [
+      "trailing_stop_sell",
+      "tighten_trailing_stop",
+      "trailing_stop",
+      "buy"
+    ],
+    "ending_equity": 100058.4,
+    "open_positions": 0,
+    "handoffs": [
+      {
+        "step": 0,
+        "payload": {
+          "contract_version": "edge.pulse.handoff.v1",
+          "symbol": "TEST",
+          "action": "buy",
+          "confidence": 1.0,
+          "reason": "archive_validation_campaign",
+          "mode": "paper",
+          "orb_session": "market_open",
+          "idempotency_key": "tight-buy",
+          "source": "sentinel_edge",
+          "created_at": 1784249283.8469493,
+          "metadata": {
+            "quantity": 10
+          }
+        },
+        "response": {
+          "accepted": true,
+          "status": "accepted",
+          "reason": "pulse_accepted",
+          "handoff_id": "tight-buy",
+          "message": "buy accepted: pulse_accepted"
+        }
+      },
+      {
+        "step": 0,
+        "payload": {
+          "contract_version": "edge.pulse.handoff.v1",
+          "symbol": "TEST",
+          "action": "trailing_stop",
+          "confidence": 1.0,
+          "reason": "archive_validation_campaign",
+          "mode": "paper",
+          "orb_session": "market_open",
+          "idempotency_key": "tight-enable",
+          "source": "sentinel_edge",
+          "created_at": 1784249283.8469503,
+          "metadata": {},
+          "trailing_percent": 5
+        },
+        "response": {
+          "accepted": true,
+          "status": "accepted",
+          "reason": "pulse_accepted",
+          "handoff_id": "tight-enable",
+          "message": "trailing_stop accepted: pulse_accepted"
+        }
+      },
+      {
+        "step": 1,
+        "payload": {
+          "contract_version": "edge.pulse.handoff.v1",
+          "symbol": "TEST",
+          "action": "tighten_trailing_stop",
+          "confidence": 1.0,
+          "reason": "archive_validation_campaign",
+          "mode": "paper",
+          "orb_session": "market_open",
+          "idempotency_key": "tight-update",
+          "source": "sentinel_edge",
+          "created_at": 1784249283.846951,
+          "metadata": {},
+          "trailing_percent": 2
+        },
+        "response": {
+          "accepted": true,
+          "status": "accepted",
+          "reason": "pulse_accepted",
+          "handoff_id": "tight-update",
+          "message": "tighten_trailing_stop accepted: pulse_accepted"
+        }
+      }
+    ],
+    "event_log": [
+      {
+        "timestamp": 1784249283.8469732,
+        "event_type": "replay_imported",
+        "session_id": "replay-39c4eb84ccd9",
+        "symbols": [
+          "TEST"
+        ],
+        "bar_count": 3
+      },
+      {
+        "timestamp": 1784249283.8469775,
+        "event_type": "replay_started",
+        "session_id": "replay-39c4eb84ccd9",
+        "speed": 1.0,
+        "loop": false
+      },
+      {
+        "timestamp": 1784249283.8470397,
+        "event_type": "handoff",
+        "symbol": "TEST",
+        "action": "buy",
+        "accepted": true,
+        "status": "accepted",
+        "reason": "pulse_accepted",
+        "handoff_id": "tight-buy",
+        "message": "buy accepted: pulse_accepted"
+      },
+      {
+        "timestamp": 1784249283.8470693,
+        "event_type": "handoff",
+        "symbol": "TEST",
+        "action": "trailing_stop",
+        "accepted": true,
+        "status": "accepted",
+        "reason": "pulse_accepted",
+        "handoff_id": "tight-enable",
+        "message": "trailing_stop accepted: pulse_accepted"
+      },
+      {
+        "timestamp": 1784249283.8471274,
+        "event_type": "handoff",
+        "symbol": "TEST",
+        "action": "tighten_trailing_stop",
+        "accepted": true,
+        "status": "accepted",
+        "reason": "pulse_accepted",
+        "handoff_id": "tight-update",
+        "message": "tighten_trailing_stop accepted: pulse_accepted"
+      }
+    ]
+  },
+  {
+    "name": "partial_fill_and_idempotency",
+    "passed": true,
+    "expected_quantity": 5.0,
+    "actual_quantity": 5.0,
+    "first_response": {
+      "accepted": true,
+      "status": "accepted",
+      "reason": "pulse_accepted",
+      "handoff_id": "duplicate-key",
+      "message": "buy accepted: pulse_accepted"
+    },
+    "duplicate_response": {
+      "accepted": true,
+      "status": "accepted",
+      "reason": "duplicate",
+      "handoff_id": "duplicate-key",
+      "message": "buy accepted: pulse_accepted"
+    }
+  },
+  {
+    "name": "emergency_exit",
+    "passed": true,
+    "response": {
+      "accepted": true,
+      "status": "accepted",
+      "reason": "pulse_accepted",
+      "handoff_id": "emergency-exit",
+      "message": "emergency_exit accepted: pulse_accepted"
+    },
+    "open_positions": 0,
+    "decision_actions": [
+      "emergency_exit",
+      "buy"
+    ]
+  }
+]

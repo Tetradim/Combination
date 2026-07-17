@@ -1,0 +1,5349 @@
+{
+  "ES=F": {
+    "settings": {
+      "symbol": "ES=F",
+      "stop_pct": 0.5,
+      "target_pct": 4.0,
+      "trail_pct": 2.0,
+      "slippage_bps": 0.0,
+      "commission": 0.0,
+      "bars": 473,
+      "first_timestamp": "2026-06-17T00:00:00+00:00",
+      "last_timestamp": "2026-07-17T00:00:00+00:00",
+      "ending_equity": 100105.480687,
+      "return_pct": 0.10548068700000357,
+      "trades": 16,
+      "wins": 7,
+      "losses": 9,
+      "win_rate_pct": 43.75,
+      "gross_profit": 416.94087575,
+      "gross_loss": 311.4518724899996,
+      "profit_factor": 1.3387008156882652,
+      "max_drawdown_pct": 0.17530460562181854,
+      "exit_counts": {
+        "sell": 11,
+        "regular_stop_sell": 5
+      }
+    },
+    "trades": [
+      {
+        "symbol": "ES=F",
+        "entry_time": "2026-06-18T13:00:00+00:00",
+        "exit_time": "2026-06-21T22:00:00+00:00",
+        "entry_price": 7544.0,
+        "exit_price": 7538.25,
+        "quantity": 1.316309,
+        "exit_reason": "sell",
+        "pnl": -7.56877675
+      },
+      {
+        "symbol": "ES=F",
+        "entry_time": "2026-06-22T11:00:00+00:00",
+        "exit_time": "2026-06-22T20:00:00+00:00",
+        "entry_price": 7563.5,
+        "exit_price": 7540.75,
+        "quantity": 1.316309,
+        "exit_reason": "sell",
+        "pnl": -29.946029749999997
+      },
+      {
+        "symbol": "ES=F",
+        "entry_time": "2026-06-24T06:00:00+00:00",
+        "exit_time": "2026-06-24T08:00:00+00:00",
+        "entry_price": 7448.75,
+        "exit_price": 7447.5,
+        "quantity": 1.316309,
+        "exit_reason": "sell",
+        "pnl": -1.64538625
+      },
+      {
+        "symbol": "ES=F",
+        "entry_time": "2026-06-24T10:00:00+00:00",
+        "exit_time": "2026-06-24T17:00:00+00:00",
+        "entry_price": 7449.0,
+        "exit_price": 7411.755,
+        "quantity": 1.316309,
+        "exit_reason": "regular_stop_sell",
+        "pnl": -49.025928704999856
+      },
+      {
+        "symbol": "ES=F",
+        "entry_time": "2026-06-24T17:00:00+00:00",
+        "exit_time": "2026-06-24T23:00:00+00:00",
+        "entry_price": 7414.0,
+        "exit_price": 7471.75,
+        "quantity": 1.316309,
+        "exit_reason": "sell",
+        "pnl": 76.01684475
+      },
+      {
+        "symbol": "ES=F",
+        "entry_time": "2026-06-25T02:00:00+00:00",
+        "exit_time": "2026-06-25T13:00:00+00:00",
+        "entry_price": 7463.25,
+        "exit_price": 7425.93375,
+        "quantity": 1.316309,
+        "exit_reason": "regular_stop_sell",
+        "pnl": -49.119715721249804
+      },
+      {
+        "symbol": "ES=F",
+        "entry_time": "2026-06-25T13:00:00+00:00",
+        "exit_time": "2026-06-25T16:00:00+00:00",
+        "entry_price": 7393.25,
+        "exit_price": 7420.25,
+        "quantity": 1.316309,
+        "exit_reason": "sell",
+        "pnl": 35.540343
+      },
+      {
+        "symbol": "ES=F",
+        "entry_time": "2026-06-26T17:00:00+00:00",
+        "exit_time": "2026-06-26T19:00:00+00:00",
+        "entry_price": 7430.0,
+        "exit_price": 7392.85,
+        "quantity": 1.316309,
+        "exit_reason": "regular_stop_sell",
+        "pnl": -48.90087934999952
+      },
+      {
+        "symbol": "ES=F",
+        "entry_time": "2026-06-26T19:00:00+00:00",
+        "exit_time": "2026-07-01T08:00:00+00:00",
+        "entry_price": 7375.5,
+        "exit_price": 7529.0,
+        "quantity": 1.316309,
+        "exit_reason": "sell",
+        "pnl": 202.0534315
+      },
+      {
+        "symbol": "ES=F",
+        "entry_time": "2026-07-01T15:00:00+00:00",
+        "exit_time": "2026-07-01T20:00:00+00:00",
+        "entry_price": 7572.5,
+        "exit_price": 7534.6375,
+        "quantity": 1.316309,
+        "exit_reason": "regular_stop_sell",
+        "pnl": -49.838749512500236
+      },
+      {
+        "symbol": "ES=F",
+        "entry_time": "2026-07-01T20:00:00+00:00",
+        "exit_time": "2026-07-02T09:00:00+00:00",
+        "entry_price": 7532.75,
+        "exit_price": 7537.25,
+        "quantity": 1.316309,
+        "exit_reason": "sell",
+        "pnl": 5.9233905
+      },
+      {
+        "symbol": "ES=F",
+        "entry_time": "2026-07-02T14:00:00+00:00",
+        "exit_time": "2026-07-02T16:00:00+00:00",
+        "entry_price": 7557.25,
+        "exit_price": 7519.46375,
+        "quantity": 1.316309,
+        "exit_reason": "regular_stop_sell",
+        "pnl": -49.73838095125014
+      },
+      {
+        "symbol": "ES=F",
+        "entry_time": "2026-07-02T16:00:00+00:00",
+        "exit_time": "2026-07-02T17:00:00+00:00",
+        "entry_price": 7501.5,
+        "exit_price": 7482.0,
+        "quantity": 1.316309,
+        "exit_reason": "sell",
+        "pnl": -25.6680255
+      },
+      {
+        "symbol": "ES=F",
+        "entry_time": "2026-07-03T03:00:00+00:00",
+        "exit_time": "2026-07-07T07:00:00+00:00",
+        "entry_price": 7554.25,
+        "exit_price": 7572.25,
+        "quantity": 1.316309,
+        "exit_reason": "sell",
+        "pnl": 23.693562
+      },
+      {
+        "symbol": "ES=F",
+        "entry_time": "2026-07-09T00:00:00+00:00",
+        "exit_time": "2026-07-13T05:00:00+00:00",
+        "entry_price": 7532.25,
+        "exit_price": 7578.5,
+        "quantity": 1.316309,
+        "exit_reason": "sell",
+        "pnl": 60.879291249999994
+      },
+      {
+        "symbol": "ES=F",
+        "entry_time": "2026-07-14T14:00:00+00:00",
+        "exit_time": "2026-07-16T11:00:00+00:00",
+        "entry_price": 7587.5,
+        "exit_price": 7597.25,
+        "quantity": 1.316309,
+        "exit_reason": "sell",
+        "pnl": 12.83401275
+      }
+    ]
+  },
+  "NQ=F": {
+    "settings": {
+      "symbol": "NQ=F",
+      "stop_pct": 2.0,
+      "target_pct": 1.0,
+      "trail_pct": 2.0,
+      "slippage_bps": 0.0,
+      "commission": 0.0,
+      "bars": 473,
+      "first_timestamp": "2026-06-17T00:00:00+00:00",
+      "last_timestamp": "2026-07-17T00:00:00+00:00",
+      "ending_equity": 100333.974603,
+      "return_pct": 0.3339746029999979,
+      "trades": 20,
+      "wins": 11,
+      "losses": 9,
+      "win_rate_pct": 55.00000000000001,
+      "gross_profit": 994.5463498224972,
+      "gross_loss": 660.3935275750005,
+      "profit_factor": 1.5059904561368482,
+      "max_drawdown_pct": 0.36242098391373356,
+      "exit_counts": {
+        "take_profit_sell": 10,
+        "sell": 9,
+        "trailing_stop_sell": 1
+      }
+    },
+    "trades": [
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-06-18T07:00:00+00:00",
+        "exit_time": "2026-06-18T19:00:00+00:00",
+        "entry_price": 30444.5,
+        "exit_price": 30748.945,
+        "quantity": 0.329123,
+        "exit_reason": "take_profit_sell",
+        "pnl": 100.19985173499991
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-06-18T19:00:00+00:00",
+        "exit_time": "2026-06-22T01:00:00+00:00",
+        "entry_price": 30693.5,
+        "exit_price": 30606.75,
+        "quantity": 0.329123,
+        "exit_reason": "sell",
+        "pnl": -28.55142025
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-06-22T07:00:00+00:00",
+        "exit_time": "2026-06-22T22:00:00+00:00",
+        "entry_price": 30759.0,
+        "exit_price": 30582.25,
+        "quantity": 0.329123,
+        "exit_reason": "sell",
+        "pnl": -58.17249025
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-06-24T10:00:00+00:00",
+        "exit_time": "2026-06-24T17:00:00+00:00",
+        "entry_price": 29794.75,
+        "exit_price": 29387.25,
+        "quantity": 0.329123,
+        "exit_reason": "sell",
+        "pnl": -134.1176225
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-06-25T01:00:00+00:00",
+        "exit_time": "2026-06-25T13:00:00+00:00",
+        "entry_price": 29998.75,
+        "exit_price": 29658.475,
+        "quantity": 0.329123,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -111.99232882500048
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-06-25T13:00:00+00:00",
+        "exit_time": "2026-06-25T14:00:00+00:00",
+        "entry_price": 29316.0,
+        "exit_price": 29609.16,
+        "quantity": 0.329123,
+        "exit_reason": "take_profit_sell",
+        "pnl": 96.48569867999996
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-06-25T14:00:00+00:00",
+        "exit_time": "2026-06-25T16:00:00+00:00",
+        "entry_price": 29633.25,
+        "exit_price": 29682.0,
+        "quantity": 0.329123,
+        "exit_reason": "sell",
+        "pnl": 16.04474625
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-06-26T20:00:00+00:00",
+        "exit_time": "2026-06-28T23:00:00+00:00",
+        "entry_price": 29368.25,
+        "exit_price": 29661.9325,
+        "quantity": 0.329123,
+        "exit_reason": "take_profit_sell",
+        "pnl": 96.65766544749967
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-06-28T23:00:00+00:00",
+        "exit_time": "2026-06-29T16:00:00+00:00",
+        "entry_price": 29617.0,
+        "exit_price": 29913.17,
+        "quantity": 0.329123,
+        "exit_reason": "take_profit_sell",
+        "pnl": 97.47635890999942
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-06-29T16:00:00+00:00",
+        "exit_time": "2026-06-30T05:00:00+00:00",
+        "entry_price": 29915.5,
+        "exit_price": 30214.655,
+        "quantity": 0.329123,
+        "exit_reason": "take_profit_sell",
+        "pnl": 98.45879106499962
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-06-30T05:00:00+00:00",
+        "exit_time": "2026-06-30T15:00:00+00:00",
+        "entry_price": 30167.0,
+        "exit_price": 30468.67,
+        "quantity": 0.329123,
+        "exit_reason": "take_profit_sell",
+        "pnl": 99.28653540999943
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-06-30T15:00:00+00:00",
+        "exit_time": "2026-07-01T11:00:00+00:00",
+        "entry_price": 30459.75,
+        "exit_price": 30362.75,
+        "quantity": 0.329123,
+        "exit_reason": "sell",
+        "pnl": -31.924931
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-07-06T01:00:00+00:00",
+        "exit_time": "2026-07-06T16:00:00+00:00",
+        "entry_price": 29792.75,
+        "exit_price": 30090.6775,
+        "quantity": 0.329123,
+        "exit_reason": "take_profit_sell",
+        "pnl": 98.05479258250053
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-07-06T16:00:00+00:00",
+        "exit_time": "2026-07-07T02:00:00+00:00",
+        "entry_price": 29990.0,
+        "exit_price": 29748.0,
+        "quantity": 0.329123,
+        "exit_reason": "sell",
+        "pnl": -79.647766
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-07-08T20:00:00+00:00",
+        "exit_time": "2026-07-09T07:00:00+00:00",
+        "entry_price": 29391.25,
+        "exit_price": 29685.1625,
+        "quantity": 0.329123,
+        "exit_reason": "take_profit_sell",
+        "pnl": 96.73336373749952
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-07-09T07:00:00+00:00",
+        "exit_time": "2026-07-09T17:00:00+00:00",
+        "entry_price": 29686.25,
+        "exit_price": 29983.1125,
+        "quantity": 0.329123,
+        "exit_reason": "take_profit_sell",
+        "pnl": 97.70427658749976
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-07-09T17:00:00+00:00",
+        "exit_time": "2026-07-10T10:00:00+00:00",
+        "entry_price": 29973.75,
+        "exit_price": 29850.75,
+        "quantity": 0.329123,
+        "exit_reason": "sell",
+        "pnl": -40.482129
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-07-10T17:00:00+00:00",
+        "exit_time": "2026-07-13T03:00:00+00:00",
+        "entry_price": 30038.0,
+        "exit_price": 29695.25,
+        "quantity": 0.329123,
+        "exit_reason": "sell",
+        "pnl": -112.80690825
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-07-14T10:00:00+00:00",
+        "exit_time": "2026-07-14T12:00:00+00:00",
+        "entry_price": 29607.25,
+        "exit_price": 29903.3225,
+        "quantity": 0.329123,
+        "exit_reason": "take_profit_sell",
+        "pnl": 97.44426941749947
+      },
+      {
+        "symbol": "NQ=F",
+        "entry_time": "2026-07-14T12:00:00+00:00",
+        "exit_time": "2026-07-15T15:00:00+00:00",
+        "entry_price": 29772.5,
+        "exit_price": 29582.0,
+        "quantity": 0.329123,
+        "exit_reason": "sell",
+        "pnl": -62.6979315
+      }
+    ]
+  },
+  "CL=F": {
+    "settings": {
+      "symbol": "CL=F",
+      "stop_pct": 0.5,
+      "target_pct": 1.0,
+      "trail_pct": 0.5,
+      "slippage_bps": 0.0,
+      "commission": 0.0,
+      "bars": 473,
+      "first_timestamp": "2026-06-17T00:00:00+00:00",
+      "last_timestamp": "2026-07-17T00:00:00+00:00",
+      "ending_equity": 102301.281004,
+      "return_pct": 2.301281004,
+      "trades": 170,
+      "wins": 84,
+      "losses": 86,
+      "win_rate_pct": 49.411764705882355,
+      "gross_profit": 4612.967011047179,
+      "gross_loss": 2311.6873019529635,
+      "profit_factor": 1.9954978370777243,
+      "max_drawdown_pct": 0.41321554831068924,
+      "exit_counts": {
+        "trailing_stop_sell": 170
+      }
+    },
+    "trades": [
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-18T22:00:00+00:00",
+        "exit_time": "2026-06-19T00:00:00+00:00",
+        "entry_price": 75.379997,
+        "exit_price": 75.082699,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -39.19035036124772
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-19T00:00:00+00:00",
+        "exit_time": "2026-06-19T01:00:00+00:00",
+        "entry_price": 75.059998,
+        "exit_price": 75.331449,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 35.78315291697774
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-19T01:00:00+00:00",
+        "exit_time": "2026-06-19T03:00:00+00:00",
+        "entry_price": 75.650002,
+        "exit_price": 75.450852,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -26.252306690400403
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-19T03:00:00+00:00",
+        "exit_time": "2026-06-21T22:00:00+00:00",
+        "entry_price": 75.260002,
+        "exit_price": 77.749299,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 328.14355153147113
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-21T22:00:00+00:00",
+        "exit_time": "2026-06-21T23:00:00+00:00",
+        "entry_price": 77.459999,
+        "exit_price": 77.470701,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 1.4107566467531987
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-21T23:00:00+00:00",
+        "exit_time": "2026-06-22T00:00:00+00:00",
+        "entry_price": 77.68,
+        "exit_price": 77.4309,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -32.83680440160168
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-22T00:00:00+00:00",
+        "exit_time": "2026-06-22T01:00:00+00:00",
+        "entry_price": 77.0,
+        "exit_price": 76.634897,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -48.128525882928635
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-22T01:00:00+00:00",
+        "exit_time": "2026-06-22T02:00:00+00:00",
+        "entry_price": 75.760002,
+        "exit_price": 76.157301,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 52.37265978302451
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-22T02:00:00+00:00",
+        "exit_time": "2026-06-22T03:00:00+00:00",
+        "entry_price": 75.330002,
+        "exit_price": 76.157301,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 109.05602346302541
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-22T03:00:00+00:00",
+        "exit_time": "2026-06-22T04:00:00+00:00",
+        "entry_price": 75.690002,
+        "exit_price": 76.157301,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 61.60018410302361
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-22T04:00:00+00:00",
+        "exit_time": "2026-06-22T05:00:00+00:00",
+        "entry_price": 75.410004,
+        "exit_price": 76.157301,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 98.51001773947242
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-22T05:00:00+00:00",
+        "exit_time": "2026-06-22T06:00:00+00:00",
+        "entry_price": 75.300003,
+        "exit_price": 76.157301,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 113.01054492124801
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-22T06:00:00+00:00",
+        "exit_time": "2026-06-22T07:00:00+00:00",
+        "entry_price": 75.330002,
+        "exit_price": 76.157301,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 109.05602346302541
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-22T07:00:00+00:00",
+        "exit_time": "2026-06-22T08:00:00+00:00",
+        "entry_price": 75.639999,
+        "exit_price": 76.157301,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 68.19166836835211
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-22T08:00:00+00:00",
+        "exit_time": "2026-06-22T09:00:00+00:00",
+        "entry_price": 75.230003,
+        "exit_price": 76.157301,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 122.238069241249
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-25T14:00:00+00:00",
+        "exit_time": "2026-06-25T15:00:00+00:00",
+        "entry_price": 70.809998,
+        "exit_price": 71.401202,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 77.93356125830462
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-25T15:00:00+00:00",
+        "exit_time": "2026-06-25T17:00:00+00:00",
+        "entry_price": 71.43,
+        "exit_price": 71.480796,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 6.6960189336948375
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-25T17:00:00+00:00",
+        "exit_time": "2026-06-25T18:00:00+00:00",
+        "entry_price": 71.779999,
+        "exit_price": 71.868853,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 11.712892084703705
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-25T18:00:00+00:00",
+        "exit_time": "2026-06-25T19:00:00+00:00",
+        "entry_price": 72.129997,
+        "exit_price": 72.1375,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 0.9890587853279756
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-25T19:00:00+00:00",
+        "exit_time": "2026-06-25T20:00:00+00:00",
+        "entry_price": 72.029999,
+        "exit_price": 71.8191,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -27.8010807366237
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-25T20:00:00+00:00",
+        "exit_time": "2026-06-26T00:00:00+00:00",
+        "entry_price": 71.470001,
+        "exit_price": 71.500701,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 4.0469285232013394
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-26T00:00:00+00:00",
+        "exit_time": "2026-06-26T01:00:00+00:00",
+        "entry_price": 71.800003,
+        "exit_price": 71.480796,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -42.078433651632764
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-26T01:00:00+00:00",
+        "exit_time": "2026-06-26T02:00:00+00:00",
+        "entry_price": 71.239998,
+        "exit_price": 70.933551,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -40.39638778987275
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-26T02:00:00+00:00",
+        "exit_time": "2026-06-26T04:00:00+00:00",
+        "entry_price": 70.82,
+        "exit_price": 70.4659,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -46.67809088159846
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-26T04:00:00+00:00",
+        "exit_time": "2026-06-26T05:00:00+00:00",
+        "entry_price": 70.410004,
+        "exit_price": 70.585302,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 23.10809368924773
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-26T05:00:00+00:00",
+        "exit_time": "2026-06-26T06:00:00+00:00",
+        "entry_price": 70.879997,
+        "exit_price": 70.555454,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -42.781834648368736
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-26T06:00:00+00:00",
+        "exit_time": "2026-06-26T07:00:00+00:00",
+        "entry_price": 70.489998,
+        "exit_price": 70.177349,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -41.21394644462312
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-29T03:00:00+00:00",
+        "exit_time": "2026-06-29T05:00:00+00:00",
+        "entry_price": 70.059998,
+        "exit_price": 69.779347,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -36.995913256174916
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-29T05:00:00+00:00",
+        "exit_time": "2026-06-29T06:00:00+00:00",
+        "entry_price": 69.510002,
+        "exit_price": 69.938551,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 56.49209028302451
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-29T06:00:00+00:00",
+        "exit_time": "2026-06-29T07:00:00+00:00",
+        "entry_price": 69.949997,
+        "exit_price": 69.659952,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -38.23424701991896
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-29T07:00:00+00:00",
+        "exit_time": "2026-06-29T08:00:00+00:00",
+        "entry_price": 69.519997,
+        "exit_price": 69.918647,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 52.55075100240046
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-29T08:00:00+00:00",
+        "exit_time": "2026-06-29T09:00:00+00:00",
+        "entry_price": 70.139999,
+        "exit_price": 70.376353,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 31.15660404470288
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-29T09:00:00+00:00",
+        "exit_time": "2026-06-29T10:00:00+00:00",
+        "entry_price": 70.610001,
+        "exit_price": 70.266903,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -45.22778770204769
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-29T10:00:00+00:00",
+        "exit_time": "2026-06-29T11:00:00+00:00",
+        "entry_price": 69.849998,
+        "exit_price": 69.729602,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -15.870814543295934
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-29T11:00:00+00:00",
+        "exit_time": "2026-06-29T12:00:00+00:00",
+        "entry_price": 69.970001,
+        "exit_price": 69.8291,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -18.573820060175933
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-29T12:00:00+00:00",
+        "exit_time": "2026-06-29T13:00:00+00:00",
+        "entry_price": 70.029999,
+        "exit_price": 69.948503,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -10.742947456896177
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-29T13:00:00+00:00",
+        "exit_time": "2026-06-29T14:00:00+00:00",
+        "entry_price": 70.07,
+        "exit_price": 70.237046,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 22.02030039369776
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-29T14:00:00+00:00",
+        "exit_time": "2026-06-29T15:00:00+00:00",
+        "entry_price": 70.470001,
+        "exit_price": 70.346497,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -16.280516623103598
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-29T15:00:00+00:00",
+        "exit_time": "2026-06-29T16:00:00+00:00",
+        "entry_price": 70.589996,
+        "exit_price": 70.684801,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 12.497363473679185
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-29T16:00:00+00:00",
+        "exit_time": "2026-06-29T17:00:00+00:00",
+        "entry_price": 70.809998,
+        "exit_price": 70.794252,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -2.0756656848950685
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-29T17:00:00+00:00",
+        "exit_time": "2026-06-29T18:00:00+00:00",
+        "entry_price": 70.910004,
+        "exit_price": 70.645,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -34.93329792710462
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-29T18:00:00+00:00",
+        "exit_time": "2026-06-29T22:00:00+00:00",
+        "entry_price": 70.459999,
+        "exit_price": 70.256951,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -26.7661479732474
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-29T22:00:00+00:00",
+        "exit_time": "2026-06-30T02:00:00+00:00",
+        "entry_price": 70.279999,
+        "exit_price": 70.515653,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 31.064328801503564
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-30T02:00:00+00:00",
+        "exit_time": "2026-06-30T03:00:00+00:00",
+        "entry_price": 70.68,
+        "exit_price": 70.386298,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -38.716319254753365
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-30T03:00:00+00:00",
+        "exit_time": "2026-06-30T05:00:00+00:00",
+        "entry_price": 70.349998,
+        "exit_price": 70.127603,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -29.316503873520777
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-30T05:00:00+00:00",
+        "exit_time": "2026-06-30T06:00:00+00:00",
+        "entry_price": 70.110001,
+        "exit_price": 69.858949,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -33.094120508352184
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-30T09:00:00+00:00",
+        "exit_time": "2026-06-30T10:00:00+00:00",
+        "entry_price": 71.019997,
+        "exit_price": 70.8241,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -25.823490453072292
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-30T10:00:00+00:00",
+        "exit_time": "2026-06-30T11:00:00+00:00",
+        "entry_price": 70.699997,
+        "exit_price": 70.843997,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 18.982335744000718
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-30T11:00:00+00:00",
+        "exit_time": "2026-06-30T12:00:00+00:00",
+        "entry_price": 71.150002,
+        "exit_price": 71.202198,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 6.880569420095344
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-30T12:00:00+00:00",
+        "exit_time": "2026-06-30T13:00:00+00:00",
+        "entry_price": 70.970001,
+        "exit_price": 71.241998,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 35.85512760667186
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-30T13:00:00+00:00",
+        "exit_time": "2026-06-30T14:00:00+00:00",
+        "entry_price": 70.900002,
+        "exit_price": 70.615151,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -37.549564715376434
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-30T14:00:00+00:00",
+        "exit_time": "2026-06-30T15:00:00+00:00",
+        "entry_price": 70.43,
+        "exit_price": 70.087802,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -45.109148103649375
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-30T15:00:00+00:00",
+        "exit_time": "2026-06-30T16:00:00+00:00",
+        "entry_price": 69.769997,
+        "exit_price": 69.819148,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 6.47917211217532
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-06-30T16:00:00+00:00",
+        "exit_time": "2026-06-30T18:00:00+00:00",
+        "entry_price": 69.800003,
+        "exit_price": 69.679849,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -15.838913673503924
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-02T18:00:00+00:00",
+        "exit_time": "2026-07-03T01:00:00+00:00",
+        "entry_price": 68.449997,
+        "exit_price": 68.58535,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 17.84247284692921
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-03T01:00:00+00:00",
+        "exit_time": "2026-07-05T22:00:00+00:00",
+        "entry_price": 68.900002,
+        "exit_price": 68.814204,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -11.310044737247596
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-05T22:00:00+00:00",
+        "exit_time": "2026-07-05T23:00:00+00:00",
+        "entry_price": 68.309998,
+        "exit_price": 68.436099,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 16.622857775376733
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-05T23:00:00+00:00",
+        "exit_time": "2026-07-06T00:00:00+00:00",
+        "entry_price": 68.25,
+        "exit_price": 68.436099,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 24.531900691823825
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-06T00:00:00+00:00",
+        "exit_time": "2026-07-06T01:00:00+00:00",
+        "entry_price": 68.239998,
+        "exit_price": 68.555502,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 41.590297615104554
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-06T01:00:00+00:00",
+        "exit_time": "2026-07-06T02:00:00+00:00",
+        "entry_price": 68.870003,
+        "exit_price": 68.814204,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -7.355523279023113
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-06T02:00:00+00:00",
+        "exit_time": "2026-07-06T03:00:00+00:00",
+        "entry_price": 68.580002,
+        "exit_price": 68.436099,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -18.969549031727283
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-06T03:00:00+00:00",
+        "exit_time": "2026-07-06T04:00:00+00:00",
+        "entry_price": 68.419998,
+        "exit_price": 68.436099,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 2.122462415374936
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-06T04:00:00+00:00",
+        "exit_time": "2026-07-06T06:00:00+00:00",
+        "entry_price": 68.610001,
+        "exit_price": 68.863949,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 33.47587637164909
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-06T06:00:00+00:00",
+        "exit_time": "2026-07-06T07:00:00+00:00",
+        "entry_price": 68.760002,
+        "exit_price": 68.436099,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -42.697468711728185
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-06T07:00:00+00:00",
+        "exit_time": "2026-07-06T08:00:00+00:00",
+        "entry_price": 67.93,
+        "exit_price": 68.436099,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 66.71486901182293
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-06T08:00:00+00:00",
+        "exit_time": "2026-07-06T09:00:00+00:00",
+        "entry_price": 68.199997,
+        "exit_price": 68.436099,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 31.123384957152325
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-06T16:00:00+00:00",
+        "exit_time": "2026-07-06T17:00:00+00:00",
+        "entry_price": 68.309998,
+        "exit_price": 68.436099,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 16.622857775376733
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-06T17:00:00+00:00",
+        "exit_time": "2026-07-06T18:00:00+00:00",
+        "entry_price": 68.529999,
+        "exit_price": 68.436099,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -12.378064766400657
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-06T18:00:00+00:00",
+        "exit_time": "2026-07-07T01:00:00+00:00",
+        "entry_price": 68.540001,
+        "exit_price": 68.754498,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 28.27537548667126
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T01:00:00+00:00",
+        "exit_time": "2026-07-07T02:00:00+00:00",
+        "entry_price": 69.07,
+        "exit_price": 68.9734,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -12.73398356159936
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T02:00:00+00:00",
+        "exit_time": "2026-07-07T03:00:00+00:00",
+        "entry_price": 69.0,
+        "exit_price": 68.873901,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -16.622594131823526
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T03:00:00+00:00",
+        "exit_time": "2026-07-07T05:00:00+00:00",
+        "entry_price": 68.93,
+        "exit_price": 69.092802,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 21.4608487763519
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T05:00:00+00:00",
+        "exit_time": "2026-07-07T08:00:00+00:00",
+        "entry_price": 69.349998,
+        "exit_price": 69.281847,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -8.98378585617604
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T08:00:00+00:00",
+        "exit_time": "2026-07-07T09:00:00+00:00",
+        "entry_price": 69.360001,
+        "exit_price": 69.391298,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 4.125626123473217
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T09:00:00+00:00",
+        "exit_time": "2026-07-07T10:00:00+00:00",
+        "entry_price": 69.269997,
+        "exit_price": 69.062954,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -27.292775968367835
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T10:00:00+00:00",
+        "exit_time": "2026-07-07T11:00:00+00:00",
+        "entry_price": 69.389999,
+        "exit_price": 69.112699,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -36.55417848479957
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T11:00:00+00:00",
+        "exit_time": "2026-07-07T12:00:00+00:00",
+        "entry_price": 69.029999,
+        "exit_price": 68.983352,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -6.149090385072951
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T12:00:00+00:00",
+        "exit_time": "2026-07-07T13:00:00+00:00",
+        "entry_price": 69.139999,
+        "exit_price": 69.729602,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 77.72251459492757
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T13:00:00+00:00",
+        "exit_time": "2026-07-07T14:00:00+00:00",
+        "entry_price": 70.029999,
+        "exit_price": 70.167397,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 18.11204837884673
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T14:00:00+00:00",
+        "exit_time": "2026-07-07T15:00:00+00:00",
+        "entry_price": 70.230003,
+        "exit_price": 70.207198,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -3.0061956016788245
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T15:00:00+00:00",
+        "exit_time": "2026-07-07T17:00:00+00:00",
+        "entry_price": 70.339996,
+        "exit_price": 70.366401,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 3.4807539952795916
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T17:00:00+00:00",
+        "exit_time": "2026-07-07T18:00:00+00:00",
+        "entry_price": 70.419998,
+        "exit_price": 71.102699,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 89.99485829697527
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T18:00:00+00:00",
+        "exit_time": "2026-07-07T19:00:00+00:00",
+        "entry_price": 71.449997,
+        "exit_price": 72.147452,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 91.93975678008067
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T19:00:00+00:00",
+        "exit_time": "2026-07-07T20:00:00+00:00",
+        "entry_price": 71.879997,
+        "exit_price": 71.948448,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 9.023332388975478
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T20:00:00+00:00",
+        "exit_time": "2026-07-07T22:00:00+00:00",
+        "entry_price": 72.199997,
+        "exit_price": 72.286752,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 11.436198176881422
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-07T22:00:00+00:00",
+        "exit_time": "2026-07-08T00:00:00+00:00",
+        "entry_price": 72.449997,
+        "exit_price": 72.356401,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -12.337990946494802
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T00:00:00+00:00",
+        "exit_time": "2026-07-08T01:00:00+00:00",
+        "entry_price": 71.989998,
+        "exit_price": 71.799204,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -25.150803930143578
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T01:00:00+00:00",
+        "exit_time": "2026-07-08T02:00:00+00:00",
+        "entry_price": 72.129997,
+        "exit_price": 72.256903,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 16.728974305054823
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T02:00:00+00:00",
+        "exit_time": "2026-07-08T05:00:00+00:00",
+        "entry_price": 72.260002,
+        "exit_price": 72.555398,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 38.93962534329556
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T05:00:00+00:00",
+        "exit_time": "2026-07-08T06:00:00+00:00",
+        "entry_price": 72.769997,
+        "exit_price": 72.56535,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -26.976930993073115
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T06:00:00+00:00",
+        "exit_time": "2026-07-08T07:00:00+00:00",
+        "entry_price": 72.57,
+        "exit_price": 72.485748,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -11.106248271550974
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T07:00:00+00:00",
+        "exit_time": "2026-07-08T08:00:00+00:00",
+        "entry_price": 72.059998,
+        "exit_price": 74.535454,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 326.3190063298571
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T08:00:00+00:00",
+        "exit_time": "2026-07-08T09:00:00+00:00",
+        "entry_price": 74.849998,
+        "exit_price": 74.923503,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 9.68955964487964
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T09:00:00+00:00",
+        "exit_time": "2026-07-08T10:00:00+00:00",
+        "entry_price": 74.900002,
+        "exit_price": 74.595151,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -40.18600023537591
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T10:00:00+00:00",
+        "exit_time": "2026-07-08T11:00:00+00:00",
+        "entry_price": 74.150002,
+        "exit_price": 74.207102,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 7.527023409600722
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T11:00:00+00:00",
+        "exit_time": "2026-07-08T12:00:00+00:00",
+        "entry_price": 74.080002,
+        "exit_price": 73.968296,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -14.725283309855747
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T12:00:00+00:00",
+        "exit_time": "2026-07-08T13:00:00+00:00",
+        "entry_price": 73.839996,
+        "exit_price": 73.938448,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 12.978117490751295
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T13:00:00+00:00",
+        "exit_time": "2026-07-08T14:00:00+00:00",
+        "entry_price": 73.75,
+        "exit_price": 75.411051,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 218.96269284657606
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T14:00:00+00:00",
+        "exit_time": "2026-07-08T15:00:00+00:00",
+        "entry_price": 75.300003,
+        "exit_price": 75.699602,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 52.67584986782333
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T15:00:00+00:00",
+        "exit_time": "2026-07-08T16:00:00+00:00",
+        "entry_price": 75.839996,
+        "exit_price": 75.600103,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -31.623121309967345
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T16:00:00+00:00",
+        "exit_time": "2026-07-08T17:00:00+00:00",
+        "entry_price": 74.57,
+        "exit_price": 74.256847,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -41.280384619727975
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T17:00:00+00:00",
+        "exit_time": "2026-07-08T18:00:00+00:00",
+        "entry_price": 73.779999,
+        "exit_price": 73.480748,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -39.447798289775754
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T18:00:00+00:00",
+        "exit_time": "2026-07-08T19:00:00+00:00",
+        "entry_price": 73.589996,
+        "exit_price": 73.938448,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 45.933561490751295
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T19:00:00+00:00",
+        "exit_time": "2026-07-08T20:00:00+00:00",
+        "entry_price": 74.07,
+        "exit_price": 74.684698,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 81.03058206364855
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T20:00:00+00:00",
+        "exit_time": "2026-07-08T22:00:00+00:00",
+        "entry_price": 74.760002,
+        "exit_price": 74.754347,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -0.7454521432805808
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-08T22:00:00+00:00",
+        "exit_time": "2026-07-09T00:00:00+00:00",
+        "entry_price": 74.529999,
+        "exit_price": 74.19715,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -43.87674631982534
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-09T00:00:00+00:00",
+        "exit_time": "2026-07-09T01:00:00+00:00",
+        "entry_price": 74.019997,
+        "exit_price": 74.246903,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 29.91115190505595
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-09T01:00:00+00:00",
+        "exit_time": "2026-07-09T02:00:00+00:00",
+        "entry_price": 74.120003,
+        "exit_price": 74.296648,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 23.28565762152102
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-09T02:00:00+00:00",
+        "exit_time": "2026-07-09T03:00:00+00:00",
+        "entry_price": 74.510002,
+        "exit_price": 74.226998,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -37.306089895104705
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-09T03:00:00+00:00",
+        "exit_time": "2026-07-09T05:00:00+00:00",
+        "entry_price": 74.279999,
+        "exit_price": 74.167301,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -14.856050511649165
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-09T05:00:00+00:00",
+        "exit_time": "2026-07-09T06:00:00+00:00",
+        "entry_price": 73.059998,
+        "exit_price": 73.162349,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 13.492090595377709
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T00:00:00+00:00",
+        "exit_time": "2026-07-13T01:00:00+00:00",
+        "entry_price": 74.269997,
+        "exit_price": 74.286704,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 2.2023464116315647
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T01:00:00+00:00",
+        "exit_time": "2026-07-13T02:00:00+00:00",
+        "entry_price": 74.389999,
+        "exit_price": 74.217046,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -22.798971624528896
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T02:00:00+00:00",
+        "exit_time": "2026-07-13T05:00:00+00:00",
+        "entry_price": 74.25,
+        "exit_price": 74.704602,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 59.926443013151236
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T05:00:00+00:00",
+        "exit_time": "2026-07-13T06:00:00+00:00",
+        "entry_price": 74.699997,
+        "exit_price": 74.336449,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -47.92354302124727
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T06:00:00+00:00",
+        "exit_time": "2026-07-13T07:00:00+00:00",
+        "entry_price": 74.059998,
+        "exit_price": 73.858853,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -26.51529113351958
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T07:00:00+00:00",
+        "exit_time": "2026-07-13T08:00:00+00:00",
+        "entry_price": 74.0,
+        "exit_price": 73.679753,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -42.21552829867132
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T08:00:00+00:00",
+        "exit_time": "2026-07-13T09:00:00+00:00",
+        "entry_price": 73.059998,
+        "exit_price": 72.824052,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -31.102820760095792
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T09:00:00+00:00",
+        "exit_time": "2026-07-13T10:00:00+00:00",
+        "entry_price": 73.120003,
+        "exit_price": 73.570302,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 59.35921391102415
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T10:00:00+00:00",
+        "exit_time": "2026-07-13T11:00:00+00:00",
+        "entry_price": 73.809998,
+        "exit_price": 73.679753,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -17.16912721511841
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T11:00:00+00:00",
+        "exit_time": "2026-07-13T12:00:00+00:00",
+        "entry_price": 73.800003,
+        "exit_price": 74.087699,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 37.924597668095586
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T12:00:00+00:00",
+        "exit_time": "2026-07-13T13:00:00+00:00",
+        "entry_price": 73.779999,
+        "exit_price": 73.739451,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -5.3451093732481505
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T13:00:00+00:00",
+        "exit_time": "2026-07-13T14:00:00+00:00",
+        "entry_price": 73.730003,
+        "exit_price": 74.833949,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 145.524122328097
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T14:00:00+00:00",
+        "exit_time": "2026-07-13T15:00:00+00:00",
+        "entry_price": 74.5,
+        "exit_price": 74.605103,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 13.854864122927964
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T15:00:00+00:00",
+        "exit_time": "2026-07-13T16:00:00+00:00",
+        "entry_price": 74.849998,
+        "exit_price": 75.580199,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 96.2563926569752
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T16:00:00+00:00",
+        "exit_time": "2026-07-13T17:00:00+00:00",
+        "entry_price": 75.739998,
+        "exit_price": 77.311497,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 207.1577891622244
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T17:00:00+00:00",
+        "exit_time": "2026-07-13T18:00:00+00:00",
+        "entry_price": 77.599998,
+        "exit_price": 78.057747,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 60.3412861422249
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T18:00:00+00:00",
+        "exit_time": "2026-07-13T19:00:00+00:00",
+        "entry_price": 77.639999,
+        "exit_price": 77.590103,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -6.577379335296519
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T19:00:00+00:00",
+        "exit_time": "2026-07-13T20:00:00+00:00",
+        "entry_price": 77.660004,
+        "exit_price": 78.187102,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 69.48299448604736
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T20:00:00+00:00",
+        "exit_time": "2026-07-13T22:00:00+00:00",
+        "entry_price": 78.0,
+        "exit_price": 78.694546,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 91.55628723369634
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T22:00:00+00:00",
+        "exit_time": "2026-07-13T23:00:00+00:00",
+        "entry_price": 79.040001,
+        "exit_price": 79.182102,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 18.732006191375564
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-13T23:00:00+00:00",
+        "exit_time": "2026-07-14T00:00:00+00:00",
+        "entry_price": 78.949997,
+        "exit_price": 80.017898,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 140.77260641217683
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T00:00:00+00:00",
+        "exit_time": "2026-07-14T01:00:00+00:00",
+        "entry_price": 79.860001,
+        "exit_price": 79.550247,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -40.832322403103746
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T01:00:00+00:00",
+        "exit_time": "2026-07-14T02:00:00+00:00",
+        "entry_price": 79.519997,
+        "exit_price": 79.211951,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -40.60717080969659
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T02:00:00+00:00",
+        "exit_time": "2026-07-14T03:00:00+00:00",
+        "entry_price": 79.529999,
+        "exit_price": 79.659698,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 17.097152525424296
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T03:00:00+00:00",
+        "exit_time": "2026-07-14T04:00:00+00:00",
+        "entry_price": 79.629997,
+        "exit_price": 79.510454,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -15.75837056836896
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T04:00:00+00:00",
+        "exit_time": "2026-07-14T05:00:00+00:00",
+        "entry_price": 79.779999,
+        "exit_price": 79.500502,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -36.84379092667283
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T05:00:00+00:00",
+        "exit_time": "2026-07-14T06:00:00+00:00",
+        "entry_price": 79.349998,
+        "exit_price": 80.177102,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 109.03031821670474
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T06:00:00+00:00",
+        "exit_time": "2026-07-14T07:00:00+00:00",
+        "entry_price": 80.440002,
+        "exit_price": 80.52535,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 11.2507249380475
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T07:00:00+00:00",
+        "exit_time": "2026-07-14T08:00:00+00:00",
+        "entry_price": 80.379997,
+        "exit_price": 80.724347,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 45.392828565598876
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T08:00:00+00:00",
+        "exit_time": "2026-07-14T09:00:00+00:00",
+        "entry_price": 81.029999,
+        "exit_price": 80.84375,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -24.551673958224484
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T09:00:00+00:00",
+        "exit_time": "2026-07-14T10:00:00+00:00",
+        "entry_price": 80.580002,
+        "exit_price": 80.863647,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 37.390587653520925
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T10:00:00+00:00",
+        "exit_time": "2026-07-14T11:00:00+00:00",
+        "entry_price": 80.919998,
+        "exit_price": 80.644753,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -36.28328473512163
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T11:00:00+00:00",
+        "exit_time": "2026-07-14T12:00:00+00:00",
+        "entry_price": 79.540001,
+        "exit_price": 80.475597,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 123.33192633849464
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T12:00:00+00:00",
+        "exit_time": "2026-07-14T13:00:00+00:00",
+        "entry_price": 80.709999,
+        "exit_price": 80.555199,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -20.406010924799276
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T13:00:00+00:00",
+        "exit_time": "2026-07-14T14:00:00+00:00",
+        "entry_price": 79.93,
+        "exit_price": 79.6,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -43.501186080001645
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T14:00:00+00:00",
+        "exit_time": "2026-07-14T15:00:00+00:00",
+        "entry_price": 78.839996,
+        "exit_price": 79.391051,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 72.64104877368068
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T15:00:00+00:00",
+        "exit_time": "2026-07-14T16:00:00+00:00",
+        "entry_price": 79.480003,
+        "exit_price": 79.231847,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -32.712364645055274
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T16:00:00+00:00",
+        "exit_time": "2026-07-14T17:00:00+00:00",
+        "entry_price": 79.199997,
+        "exit_price": 78.9234,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -36.46150777627138
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-14T17:00:00+00:00",
+        "exit_time": "2026-07-14T18:00:00+00:00",
+        "entry_price": 78.730003,
+        "exit_price": 79.450748,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 95.00988594312105
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-15T02:00:00+00:00",
+        "exit_time": "2026-07-15T03:00:00+00:00",
+        "entry_price": 80.300003,
+        "exit_price": 79.908448,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -51.615475501679576
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-15T03:00:00+00:00",
+        "exit_time": "2026-07-15T04:00:00+00:00",
+        "entry_price": 79.93,
+        "exit_price": 79.66965,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -34.31979938160033
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-15T04:00:00+00:00",
+        "exit_time": "2026-07-15T05:00:00+00:00",
+        "entry_price": 79.779999,
+        "exit_price": 79.590048,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -25.039678172977023
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-15T05:00:00+00:00",
+        "exit_time": "2026-07-15T06:00:00+00:00",
+        "entry_price": 79.730003,
+        "exit_price": 79.629849,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -13.20247815350445
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-15T06:00:00+00:00",
+        "exit_time": "2026-07-15T07:00:00+00:00",
+        "entry_price": 79.980003,
+        "exit_price": 80.226847,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 32.539414474945325
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-15T07:00:00+00:00",
+        "exit_time": "2026-07-15T08:00:00+00:00",
+        "entry_price": 80.519997,
+        "exit_price": 80.52535,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 0.7056419669279337
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-15T08:00:00+00:00",
+        "exit_time": "2026-07-15T09:00:00+00:00",
+        "entry_price": 79.400002,
+        "exit_price": 79.769148,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 48.66148132329609
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-15T09:00:00+00:00",
+        "exit_time": "2026-07-15T10:00:00+00:00",
+        "entry_price": 80.129997,
+        "exit_price": 79.938296,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -25.270366280977186
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-15T10:00:00+00:00",
+        "exit_time": "2026-07-15T11:00:00+00:00",
+        "entry_price": 79.870003,
+        "exit_price": 79.689546,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -23.788162231630665
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-15T11:00:00+00:00",
+        "exit_time": "2026-07-15T12:00:00+00:00",
+        "entry_price": 79.559998,
+        "exit_price": 79.540302,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -2.596361700095494
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-15T12:00:00+00:00",
+        "exit_time": "2026-07-15T13:00:00+00:00",
+        "entry_price": 79.779999,
+        "exit_price": 80.047747,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 35.29501688044766
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-15T13:00:00+00:00",
+        "exit_time": "2026-07-15T14:00:00+00:00",
+        "entry_price": 79.779999,
+        "exit_price": 79.460701,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -42.09042943324845
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-15T14:00:00+00:00",
+        "exit_time": "2026-07-15T15:00:00+00:00",
+        "entry_price": 78.639999,
+        "exit_price": 78.585103,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -7.236488215295919
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-16T00:00:00+00:00",
+        "exit_time": "2026-07-16T01:00:00+00:00",
+        "entry_price": 80.139999,
+        "exit_price": 79.968153,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -22.653044918496285
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-16T01:00:00+00:00",
+        "exit_time": "2026-07-16T03:00:00+00:00",
+        "entry_price": 80.050003,
+        "exit_price": 79.878599,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -22.594779693505274
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-16T03:00:00+00:00",
+        "exit_time": "2026-07-16T05:00:00+00:00",
+        "entry_price": 79.559998,
+        "exit_price": 79.211951,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -45.88017367147121
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-16T05:00:00+00:00",
+        "exit_time": "2026-07-16T06:00:00+00:00",
+        "entry_price": 79.389999,
+        "exit_price": 79.291552,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -12.97745838187296
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-16T06:00:00+00:00",
+        "exit_time": "2026-07-16T07:00:00+00:00",
+        "entry_price": 79.410004,
+        "exit_price": 79.381099,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -3.810308435279292
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-16T13:00:00+00:00",
+        "exit_time": "2026-07-16T14:00:00+00:00",
+        "entry_price": 80.07,
+        "exit_price": 79.908448,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -21.296071556350174
+      },
+      {
+        "symbol": "CL=F",
+        "entry_time": "2026-07-16T14:00:00+00:00",
+        "exit_time": "2026-07-16T15:00:00+00:00",
+        "entry_price": 79.580002,
+        "exit_price": 79.371147,
+        "quantity": 131.821776,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -27.531637026479974
+      }
+    ]
+  },
+  "GC=F": {
+    "settings": {
+      "symbol": "GC=F",
+      "stop_pct": 2.0,
+      "target_pct": 1.0,
+      "trail_pct": 2.0,
+      "slippage_bps": 0.0,
+      "commission": 0.0,
+      "bars": 473,
+      "first_timestamp": "2026-06-17T00:00:00+00:00",
+      "last_timestamp": "2026-07-17T00:00:00+00:00",
+      "ending_equity": 99880.831784,
+      "return_pct": -0.1191682160000096,
+      "trades": 15,
+      "wins": 7,
+      "losses": 8,
+      "win_rate_pct": 46.666666666666664,
+      "gross_profit": 472.67728257876195,
+      "gross_loss": 591.848673547773,
+      "profit_factor": 0.798645504678331,
+      "max_drawdown_pct": 0.32892507773138563,
+      "exit_counts": {
+        "sell": 8,
+        "take_profit_sell": 5,
+        "trailing_stop_sell": 2
+      }
+    },
+    "trades": [
+      {
+        "symbol": "GC=F",
+        "entry_time": "2026-06-22T10:00:00+00:00",
+        "exit_time": "2026-06-22T22:00:00+00:00",
+        "entry_price": 4222.700195,
+        "exit_price": 4207.799805,
+        "quantity": 2.29521,
+        "exit_reason": "sell",
+        "pnl": -34.199524131901605
+      },
+      {
+        "symbol": "GC=F",
+        "entry_time": "2026-06-25T14:00:00+00:00",
+        "exit_time": "2026-06-26T09:00:00+00:00",
+        "entry_price": 4027.600098,
+        "exit_price": 4067.876099,
+        "quantity": 2.29521,
+        "exit_reason": "take_profit_sell",
+        "pnl": 92.4418802552104
+      },
+      {
+        "symbol": "GC=F",
+        "entry_time": "2026-06-26T09:00:00+00:00",
+        "exit_time": "2026-06-26T14:00:00+00:00",
+        "entry_price": 4062.800049,
+        "exit_price": 4103.428049,
+        "quantity": 2.29521,
+        "exit_reason": "take_profit_sell",
+        "pnl": 93.24979188000036
+      },
+      {
+        "symbol": "GC=F",
+        "entry_time": "2026-06-26T14:00:00+00:00",
+        "exit_time": "2026-06-29T06:00:00+00:00",
+        "entry_price": 4095.699951,
+        "exit_price": 4077.0,
+        "quantity": 2.29521,
+        "exit_reason": "sell",
+        "pnl": -42.92031453471013
+      },
+      {
+        "symbol": "GC=F",
+        "entry_time": "2026-06-30T11:00:00+00:00",
+        "exit_time": "2026-07-01T01:00:00+00:00",
+        "entry_price": 4047.5,
+        "exit_price": 3996.538096,
+        "quantity": 2.29521,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -116.96827167983949
+      },
+      {
+        "symbol": "GC=F",
+        "entry_time": "2026-07-01T14:00:00+00:00",
+        "exit_time": "2026-07-02T12:00:00+00:00",
+        "entry_price": 4107.899902,
+        "exit_price": 4148.978901,
+        "quantity": 2.29521,
+        "exit_reason": "take_profit_sell",
+        "pnl": 94.28492929479067
+      },
+      {
+        "symbol": "GC=F",
+        "entry_time": "2026-07-02T12:00:00+00:00",
+        "exit_time": "2026-07-03T01:00:00+00:00",
+        "entry_price": 4130.5,
+        "exit_price": 4171.805,
+        "quantity": 2.29521,
+        "exit_reason": "take_profit_sell",
+        "pnl": 94.80364905000067
+      },
+      {
+        "symbol": "GC=F",
+        "entry_time": "2026-07-03T01:00:00+00:00",
+        "exit_time": "2026-07-06T11:00:00+00:00",
+        "entry_price": 4194.899902,
+        "exit_price": 4167.399902,
+        "quantity": 2.29521,
+        "exit_reason": "sell",
+        "pnl": -63.118275
+      },
+      {
+        "symbol": "GC=F",
+        "entry_time": "2026-07-06T23:00:00+00:00",
+        "exit_time": "2026-07-07T03:00:00+00:00",
+        "entry_price": 4168.700195,
+        "exit_price": 4141.799805,
+        "quantity": 2.29521,
+        "exit_reason": "sell",
+        "pnl": -61.7420441319016
+      },
+      {
+        "symbol": "GC=F",
+        "entry_time": "2026-07-07T16:00:00+00:00",
+        "exit_time": "2026-07-07T20:00:00+00:00",
+        "entry_price": 4156.600098,
+        "exit_price": 4116.600098,
+        "quantity": 2.29521,
+        "exit_reason": "sell",
+        "pnl": -91.8084
+      },
+      {
+        "symbol": "GC=F",
+        "entry_time": "2026-07-09T06:00:00+00:00",
+        "exit_time": "2026-07-10T07:00:00+00:00",
+        "entry_price": 4117.700195,
+        "exit_price": 4117.899902,
+        "quantity": 2.29521,
+        "exit_reason": "sell",
+        "pnl": 0.4583695034694538
+      },
+      {
+        "symbol": "GC=F",
+        "entry_time": "2026-07-14T10:00:00+00:00",
+        "exit_time": "2026-07-14T12:00:00+00:00",
+        "entry_price": 4028.199951,
+        "exit_price": 4030.25,
+        "quantity": 2.29521,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 4.705292965289873
+      },
+      {
+        "symbol": "GC=F",
+        "entry_time": "2026-07-14T12:00:00+00:00",
+        "exit_time": "2026-07-15T04:00:00+00:00",
+        "entry_price": 4083.899902,
+        "exit_price": 4039.100098,
+        "quantity": 2.29521,
+        "exit_reason": "sell",
+        "pnl": -102.82495813884051
+      },
+      {
+        "symbol": "GC=F",
+        "entry_time": "2026-07-15T16:00:00+00:00",
+        "exit_time": "2026-07-15T18:00:00+00:00",
+        "entry_price": 4040.300049,
+        "exit_price": 4080.703049,
+        "quantity": 2.29521,
+        "exit_reason": "take_profit_sell",
+        "pnl": 92.73336963000057
+      },
+      {
+        "symbol": "GC=F",
+        "entry_time": "2026-07-15T18:00:00+00:00",
+        "exit_time": "2026-07-16T05:00:00+00:00",
+        "entry_price": 4066.300049,
+        "exit_price": 4032.199951,
+        "quantity": 2.29521,
+        "exit_reason": "sell",
+        "pnl": -78.26688593057975
+      }
+    ]
+  },
+  "BTC-USD": {
+    "settings": {
+      "symbol": "BTC-USD",
+      "stop_pct": 1.0,
+      "target_pct": 4.0,
+      "trail_pct": 2.0,
+      "slippage_bps": 0.0,
+      "commission": 0.0,
+      "bars": 719,
+      "first_timestamp": "2026-06-17T00:00:00+00:00",
+      "last_timestamp": "2026-07-17T00:00:00+00:00",
+      "ending_equity": 100414.693648,
+      "return_pct": 0.4146936479999974,
+      "trades": 33,
+      "wins": 12,
+      "losses": 21,
+      "win_rate_pct": 36.36363636363637,
+      "gross_profit": 1962.8803188410213,
+      "gross_loss": 1547.5995600075692,
+      "profit_factor": 1.2683386384727462,
+      "max_drawdown_pct": 0.744903061652587,
+      "exit_counts": {
+        "sell": 12,
+        "trailing_stop_sell": 8,
+        "regular_stop_sell": 10,
+        "take_profit_sell": 3
+      }
+    },
+    "trades": [
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-06-19T15:00:00+00:00",
+        "exit_time": "2026-06-21T18:00:00+00:00",
+        "entry_price": 63147.371094,
+        "exit_price": 64140.0,
+        "quantity": 0.152335,
+        "exit_reason": "sell",
+        "pnl": 151.2121243955097
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-06-22T07:00:00+00:00",
+        "exit_time": "2026-06-22T19:00:00+00:00",
+        "entry_price": 64131.398438,
+        "exit_price": 64239.0,
+        "quantity": 0.152335,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 16.39148394727053
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-06-22T19:00:00+00:00",
+        "exit_time": "2026-06-22T22:00:00+00:00",
+        "entry_price": 64431.019531,
+        "exit_price": 63786.709336,
+        "quantity": 0.152335,
+        "exit_reason": "regular_stop_sell",
+        "pnl": -98.15099355532473
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-06-22T22:00:00+00:00",
+        "exit_time": "2026-06-22T23:00:00+00:00",
+        "entry_price": 63889.988281,
+        "exit_price": 63950.609375,
+        "quantity": 0.152335,
+        "exit_reason": "sell",
+        "pnl": 9.23471435449029
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-06-24T03:00:00+00:00",
+        "exit_time": "2026-06-24T13:00:00+00:00",
+        "entry_price": 62649.710938,
+        "exit_price": 61824.417812,
+        "quantity": 0.152335,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -125.72102834920952
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-06-25T07:00:00+00:00",
+        "exit_time": "2026-06-25T10:00:00+00:00",
+        "entry_price": 61816.789062,
+        "exit_price": 61198.621171,
+        "quantity": 0.152335,
+        "exit_reason": "regular_stop_sell",
+        "pnl": -94.1686056754857
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-06-25T10:00:00+00:00",
+        "exit_time": "2026-06-25T13:00:00+00:00",
+        "entry_price": 61180.390625,
+        "exit_price": 60352.32,
+        "quantity": 0.152335,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -126.14413865937505
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-06-25T13:00:00+00:00",
+        "exit_time": "2026-06-25T14:00:00+00:00",
+        "entry_price": 58051.359375,
+        "exit_price": 59110.139375,
+        "quantity": 0.152335,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 161.28925129999982
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-06-25T14:00:00+00:00",
+        "exit_time": "2026-06-25T15:00:00+00:00",
+        "entry_price": 59369.839844,
+        "exit_price": 59456.96875,
+        "quantity": 0.152335,
+        "exit_reason": "sell",
+        "pnl": 13.27278189550971
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-06-26T09:00:00+00:00",
+        "exit_time": "2026-06-26T12:00:00+00:00",
+        "entry_price": 59644.0,
+        "exit_price": 59047.56,
+        "quantity": 0.152335,
+        "exit_reason": "regular_stop_sell",
+        "pnl": -90.85868740000035
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-06-26T12:00:00+00:00",
+        "exit_time": "2026-06-26T13:00:00+00:00",
+        "entry_price": 59087.03125,
+        "exit_price": 58891.151484,
+        "quantity": 0.152335,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -29.839344153609726
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-06-26T13:00:00+00:00",
+        "exit_time": "2026-06-26T14:00:00+00:00",
+        "entry_price": 60058.609375,
+        "exit_price": 59458.023281,
+        "quantity": 0.152335,
+        "exit_reason": "regular_stop_sell",
+        "pnl": -91.49028262948976
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-06-26T14:00:00+00:00",
+        "exit_time": "2026-06-26T16:00:00+00:00",
+        "entry_price": 59499.96875,
+        "exit_price": 59950.078125,
+        "quantity": 0.152335,
+        "exit_reason": "sell",
+        "pnl": 68.567411640625
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-06-26T18:00:00+00:00",
+        "exit_time": "2026-06-27T23:00:00+00:00",
+        "entry_price": 59563.230469,
+        "exit_price": 59934.839844,
+        "quantity": 0.152335,
+        "exit_reason": "sell",
+        "pnl": 56.609114140624996
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-06-29T07:00:00+00:00",
+        "exit_time": "2026-06-29T13:00:00+00:00",
+        "entry_price": 59932.609375,
+        "exit_price": 59473.554766,
+        "quantity": 0.152335,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -69.93008386201483
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-06-29T13:00:00+00:00",
+        "exit_time": "2026-06-30T04:00:00+00:00",
+        "entry_price": 59455.558594,
+        "exit_price": 59359.059375,
+        "quantity": 0.152335,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -14.700208526365733
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-01T05:00:00+00:00",
+        "exit_time": "2026-07-01T06:00:00+00:00",
+        "entry_price": 59060.898438,
+        "exit_price": 58470.289454,
+        "quantity": 0.152335,
+        "exit_reason": "regular_stop_sell",
+        "pnl": -89.97041957763979
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-01T06:00:00+00:00",
+        "exit_time": "2026-07-01T22:00:00+00:00",
+        "entry_price": 58666.648438,
+        "exit_price": 61013.314376,
+        "quantity": 0.152335,
+        "exit_reason": "take_profit_sell",
+        "pnl": 357.47935566523086
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-01T22:00:00+00:00",
+        "exit_time": "2026-07-02T00:00:00+00:00",
+        "entry_price": 60416.878906,
+        "exit_price": 59812.710117,
+        "quantity": 0.152335,
+        "exit_reason": "regular_stop_sell",
+        "pnl": -92.03605247231435
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-02T00:00:00+00:00",
+        "exit_time": "2026-07-02T14:00:00+00:00",
+        "entry_price": 59682.5,
+        "exit_price": 62069.8,
+        "quantity": 0.152335,
+        "exit_reason": "take_profit_sell",
+        "pnl": 363.6693455000004
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-02T14:00:00+00:00",
+        "exit_time": "2026-07-05T06:00:00+00:00",
+        "entry_price": 61633.96875,
+        "exit_price": 62722.058594,
+        "quantity": 0.152335,
+        "exit_reason": "sell",
+        "pnl": 165.7541663857403
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-05T22:00:00+00:00",
+        "exit_time": "2026-07-06T05:00:00+00:00",
+        "entry_price": 63682.070312,
+        "exit_price": 63045.249609,
+        "quantity": 0.152335,
+        "exit_reason": "regular_stop_sell",
+        "pnl": -97.01008179150574
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-06T05:00:00+00:00",
+        "exit_time": "2026-07-06T10:00:00+00:00",
+        "entry_price": 63048.441406,
+        "exit_price": 62756.269531,
+        "quantity": 0.152335,
+        "exit_reason": "sell",
+        "pnl": -44.508002578125
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-06T20:00:00+00:00",
+        "exit_time": "2026-07-07T02:00:00+00:00",
+        "entry_price": 63784.601562,
+        "exit_price": 63304.619766,
+        "quantity": 0.152335,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -73.11802689366
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-07T02:00:00+00:00",
+        "exit_time": "2026-07-07T08:00:00+00:00",
+        "entry_price": 63280.269531,
+        "exit_price": 63045.738281,
+        "quantity": 0.152335,
+        "exit_reason": "sell",
+        "pnl": -35.72731796875
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-07T17:00:00+00:00",
+        "exit_time": "2026-07-07T19:00:00+00:00",
+        "entry_price": 64135.988281,
+        "exit_price": 63494.628398,
+        "quantity": 0.152335,
+        "exit_reason": "regular_stop_sell",
+        "pnl": -97.70155777680459
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-07T19:00:00+00:00",
+        "exit_time": "2026-07-08T01:00:00+00:00",
+        "entry_price": 63752.011719,
+        "exit_price": 63114.491602,
+        "quantity": 0.152335,
+        "exit_reason": "regular_stop_sell",
+        "pnl": -97.11662702319501
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-08T01:00:00+00:00",
+        "exit_time": "2026-07-08T03:00:00+00:00",
+        "entry_price": 62992.421875,
+        "exit_price": 62718.589844,
+        "quantity": 0.152335,
+        "exit_reason": "sell",
+        "pnl": -41.71420244238471
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-09T05:00:00+00:00",
+        "exit_time": "2026-07-10T21:00:00+00:00",
+        "entry_price": 62537.390625,
+        "exit_price": 63970.390625,
+        "quantity": 0.152335,
+        "exit_reason": "sell",
+        "pnl": 218.296055
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-11T04:00:00+00:00",
+        "exit_time": "2026-07-12T01:00:00+00:00",
+        "entry_price": 64111.339844,
+        "exit_price": 64085.261719,
+        "quantity": 0.152335,
+        "exit_reason": "sell",
+        "pnl": -3.972611171875
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-12T18:00:00+00:00",
+        "exit_time": "2026-07-13T01:00:00+00:00",
+        "entry_price": 64109.191406,
+        "exit_price": 63468.099492,
+        "quantity": 0.152335,
+        "exit_reason": "regular_stop_sell",
+        "pnl": -97.66073671918953
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-14T06:00:00+00:00",
+        "exit_time": "2026-07-15T06:00:00+00:00",
+        "entry_price": 62543.820312,
+        "exit_price": 65045.573124,
+        "quantity": 0.152335,
+        "exit_reason": "take_profit_sell",
+        "pnl": 381.1045146160198
+      },
+      {
+        "symbol": "BTC-USD",
+        "entry_time": "2026-07-15T06:00:00+00:00",
+        "exit_time": "2026-07-16T00:00:00+00:00",
+        "entry_price": 64772.71875,
+        "exit_price": 64536.0,
+        "quantity": 0.152335,
+        "exit_reason": "sell",
+        "pnl": -36.06055078125
+      }
+    ]
+  },
+  "ETH-USD": {
+    "settings": {
+      "symbol": "ETH-USD",
+      "stop_pct": 0.5,
+      "target_pct": 1.0,
+      "trail_pct": 0.5,
+      "slippage_bps": 0.0,
+      "commission": 0.0,
+      "bars": 719,
+      "first_timestamp": "2026-06-17T00:00:00+00:00",
+      "last_timestamp": "2026-07-17T00:00:00+00:00",
+      "ending_equity": 100062.628241,
+      "return_pct": 0.06262824100000675,
+      "trades": 263,
+      "wins": 88,
+      "losses": 175,
+      "win_rate_pct": 33.460076045627375,
+      "gross_profit": 4756.32682367681,
+      "gross_loss": 4693.727806638695,
+      "profit_factor": 1.0133367377949731,
+      "max_drawdown_pct": 0.8148430374069454,
+      "exit_counts": {
+        "trailing_stop_sell": 257,
+        "sell": 6
+      }
+    },
+    "trades": [
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-19T19:00:00+00:00",
+        "exit_time": "2026-06-19T20:00:00+00:00",
+        "entry_price": 1699.390015,
+        "exit_price": 1698.813226,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -3.2181498127467907
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-19T20:00:00+00:00",
+        "exit_time": "2026-06-19T22:00:00+00:00",
+        "entry_price": 1706.969971,
+        "exit_price": 1699.728669,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -40.402286928745475
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-19T22:00:00+00:00",
+        "exit_time": "2026-06-19T23:00:00+00:00",
+        "entry_price": 1705.660034,
+        "exit_price": 1704.086774,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -8.777883028979392
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-19T23:00:00+00:00",
+        "exit_time": "2026-06-20T01:00:00+00:00",
+        "entry_price": 1709.410034,
+        "exit_price": 1706.196169,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -17.931512299894674
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-20T01:00:00+00:00",
+        "exit_time": "2026-06-20T04:00:00+00:00",
+        "entry_price": 1708.420044,
+        "exit_price": 1705.231049,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -17.792752049884875
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-20T04:00:00+00:00",
+        "exit_time": "2026-06-20T05:00:00+00:00",
+        "entry_price": 1711.859985,
+        "exit_price": 1721.210685,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 52.17151064609978
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-20T05:00:00+00:00",
+        "exit_time": "2026-06-20T13:00:00+00:00",
+        "entry_price": 1724.27002,
+        "exit_price": 1720.653549,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -20.177821476231994
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-20T13:00:00+00:00",
+        "exit_time": "2026-06-20T14:00:00+00:00",
+        "entry_price": 1715.829956,
+        "exit_price": 1734.951694,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 106.68826479717428
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-20T14:00:00+00:00",
+        "exit_time": "2026-06-20T15:00:00+00:00",
+        "entry_price": 1731.410034,
+        "exit_price": 1738.663024,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 40.467499224769746
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-20T15:00:00+00:00",
+        "exit_time": "2026-06-20T16:00:00+00:00",
+        "entry_price": 1738.5,
+        "exit_price": 1729.936855,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -47.77740816533543
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-20T16:00:00+00:00",
+        "exit_time": "2026-06-20T17:00:00+00:00",
+        "entry_price": 1732.089966,
+        "exit_price": 1723.429516,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -48.320313920350465
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-20T17:00:00+00:00",
+        "exit_time": "2026-06-20T22:00:00+00:00",
+        "entry_price": 1724.51001,
+        "exit_price": 1735.28,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 60.09032991577004
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-20T22:00:00+00:00",
+        "exit_time": "2026-06-21T01:00:00+00:00",
+        "entry_price": 1741.089966,
+        "exit_price": 1732.951734,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -45.40663880013609
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-21T01:00:00+00:00",
+        "exit_time": "2026-06-21T04:00:00+00:00",
+        "entry_price": 1734.869995,
+        "exit_price": 1730.404476,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -24.91501941553748
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-21T04:00:00+00:00",
+        "exit_time": "2026-06-21T08:00:00+00:00",
+        "entry_price": 1730.579956,
+        "exit_price": 1727.708065,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -16.02349469889303
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-21T08:00:00+00:00",
+        "exit_time": "2026-06-21T11:00:00+00:00",
+        "entry_price": 1726.969971,
+        "exit_price": 1726.116089,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -4.764168870085359
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-22T05:00:00+00:00",
+        "exit_time": "2026-06-22T07:00:00+00:00",
+        "entry_price": 1734.880005,
+        "exit_price": 1740.672944,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 32.321257094196625
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-22T07:00:00+00:00",
+        "exit_time": "2026-06-22T11:00:00+00:00",
+        "entry_price": 1744.390015,
+        "exit_price": 1763.030565,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 104.00351340265043
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-22T11:00:00+00:00",
+        "exit_time": "2026-06-22T12:00:00+00:00",
+        "entry_price": 1765.800049,
+        "exit_price": 1759.6575,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -34.27187916922654
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-22T12:00:00+00:00",
+        "exit_time": "2026-06-22T13:00:00+00:00",
+        "entry_price": 1762.0,
+        "exit_price": 1768.115,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 34.118171645000054
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-22T13:00:00+00:00",
+        "exit_time": "2026-06-22T14:00:00+00:00",
+        "entry_price": 1775.420044,
+        "exit_price": 1767.189597,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -45.92114529208052
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-22T14:00:00+00:00",
+        "exit_time": "2026-06-22T15:00:00+00:00",
+        "entry_price": 1752.469971,
+        "exit_price": 1747.418951,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -28.181777161459333
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-22T15:00:00+00:00",
+        "exit_time": "2026-06-22T16:00:00+00:00",
+        "entry_price": 1742.48999,
+        "exit_price": 1734.683024,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -43.55836566061857
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-22T16:00:00+00:00",
+        "exit_time": "2026-06-22T17:00:00+00:00",
+        "entry_price": 1737.97998,
+        "exit_price": 1732.04625,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -33.106789637789824
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-22T17:00:00+00:00",
+        "exit_time": "2026-06-22T18:00:00+00:00",
+        "entry_price": 1739.0,
+        "exit_price": 1736.7725,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -12.428164732499798
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-22T18:00:00+00:00",
+        "exit_time": "2026-06-22T21:00:00+00:00",
+        "entry_price": 1731.140015,
+        "exit_price": 1729.031371,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -11.765016832411515
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-24T04:00:00+00:00",
+        "exit_time": "2026-06-24T05:00:00+00:00",
+        "entry_price": 1666.660034,
+        "exit_price": 1668.485645,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 10.185856002452892
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-24T05:00:00+00:00",
+        "exit_time": "2026-06-24T08:00:00+00:00",
+        "entry_price": 1672.150024,
+        "exit_price": 1667.709516,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -24.77547246688476
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-24T08:00:00+00:00",
+        "exit_time": "2026-06-24T10:00:00+00:00",
+        "entry_price": 1671.040039,
+        "exit_price": 1662.843951,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -45.729441897223545
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-24T10:00:00+00:00",
+        "exit_time": "2026-06-24T11:00:00+00:00",
+        "entry_price": 1661.51001,
+        "exit_price": 1678.584919,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 95.26813999750664
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-24T11:00:00+00:00",
+        "exit_time": "2026-06-24T12:00:00+00:00",
+        "entry_price": 1676.880005,
+        "exit_price": 1670.35625,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -36.39878869336465
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-24T12:00:00+00:00",
+        "exit_time": "2026-06-24T13:00:00+00:00",
+        "entry_price": 1669.369995,
+        "exit_price": 1661.65996,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -43.01754660980534
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-24T13:00:00+00:00",
+        "exit_time": "2026-06-24T14:00:00+00:00",
+        "entry_price": 1642.650024,
+        "exit_price": 1645.660403,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 16.79617783131732
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-25T07:00:00+00:00",
+        "exit_time": "2026-06-25T09:00:00+00:00",
+        "entry_price": 1654.560059,
+        "exit_price": 1647.899153,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -37.164012137237115
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-25T09:00:00+00:00",
+        "exit_time": "2026-06-25T10:00:00+00:00",
+        "entry_price": 1646.180054,
+        "exit_price": 1639.063549,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -39.70599167661479
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-25T10:00:00+00:00",
+        "exit_time": "2026-06-25T11:00:00+00:00",
+        "entry_price": 1634.219971,
+        "exit_price": 1628.32746,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -32.87681140115308
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-25T11:00:00+00:00",
+        "exit_time": "2026-06-25T12:00:00+00:00",
+        "entry_price": 1630.670044,
+        "exit_price": 1637.571049,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 38.50362602011467
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-25T12:00:00+00:00",
+        "exit_time": "2026-06-25T13:00:00+00:00",
+        "entry_price": 1632.890015,
+        "exit_price": 1629.213024,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -20.515488156193243
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-25T13:00:00+00:00",
+        "exit_time": "2026-06-25T14:00:00+00:00",
+        "entry_price": 1532.0,
+        "exit_price": 1580.607299,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 271.2006820084771
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-25T14:00:00+00:00",
+        "exit_time": "2026-06-25T15:00:00+00:00",
+        "entry_price": 1565.819946,
+        "exit_price": 1562.329153,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -19.47661075243993
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-26T17:00:00+00:00",
+        "exit_time": "2026-06-26T18:00:00+00:00",
+        "entry_price": 1579.630005,
+        "exit_price": 1575.293911,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -24.192902593762017
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-26T18:00:00+00:00",
+        "exit_time": "2026-06-26T19:00:00+00:00",
+        "entry_price": 1570.390015,
+        "exit_price": 1573.493024,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 17.312999783807875
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-26T19:00:00+00:00",
+        "exit_time": "2026-06-26T20:00:00+00:00",
+        "entry_price": 1574.400024,
+        "exit_price": 1572.766694,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -9.11303896859064
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-26T20:00:00+00:00",
+        "exit_time": "2026-06-26T21:00:00+00:00",
+        "entry_price": 1568.300049,
+        "exit_price": 1568.647379,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 1.9379009905903144
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-26T21:00:00+00:00",
+        "exit_time": "2026-06-26T22:00:00+00:00",
+        "entry_price": 1573.109985,
+        "exit_price": 1569.005565,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -22.90029534966066
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-26T22:00:00+00:00",
+        "exit_time": "2026-06-27T00:00:00+00:00",
+        "entry_price": 1575.449951,
+        "exit_price": 1571.781653,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -20.46698623205428
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-27T00:00:00+00:00",
+        "exit_time": "2026-06-27T02:00:00+00:00",
+        "entry_price": 1574.469971,
+        "exit_price": 1576.32875,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 10.370914304516516
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-27T02:00:00+00:00",
+        "exit_time": "2026-06-27T05:00:00+00:00",
+        "entry_price": 1580.939941,
+        "exit_price": 1574.945685,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -33.44448979428899
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-27T05:00:00+00:00",
+        "exit_time": "2026-06-27T06:00:00+00:00",
+        "entry_price": 1576.310059,
+        "exit_price": 1574.020403,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -12.774959348487569
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-27T06:00:00+00:00",
+        "exit_time": "2026-06-27T13:00:00+00:00",
+        "entry_price": 1580.209961,
+        "exit_price": 1582.438065,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 12.431534703992169
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-27T13:00:00+00:00",
+        "exit_time": "2026-06-27T14:00:00+00:00",
+        "entry_price": 1589.680054,
+        "exit_price": 1587.821049,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -10.372175254115138
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-27T14:00:00+00:00",
+        "exit_time": "2026-06-27T15:00:00+00:00",
+        "entry_price": 1591.890015,
+        "exit_price": 1599.989879,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 45.192567498472144
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-27T15:00:00+00:00",
+        "exit_time": "2026-06-27T17:00:00+00:00",
+        "entry_price": 1603.099976,
+        "exit_price": 1596.666492,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -35.895128599731486
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-27T17:00:00+00:00",
+        "exit_time": "2026-06-27T19:00:00+00:00",
+        "entry_price": 1588.800049,
+        "exit_price": 1584.706694,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -22.838559034164856
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-27T19:00:00+00:00",
+        "exit_time": "2026-06-27T21:00:00+00:00",
+        "entry_price": 1575.780029,
+        "exit_price": 1574.547661,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -6.875902363663728
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-27T21:00:00+00:00",
+        "exit_time": "2026-06-27T22:00:00+00:00",
+        "entry_price": 1572.699951,
+        "exit_price": 1569.393629,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -18.447369012206764
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-27T22:00:00+00:00",
+        "exit_time": "2026-06-27T23:00:00+00:00",
+        "entry_price": 1576.630005,
+        "exit_price": 1571.154799,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -30.5484902861384
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-27T23:00:00+00:00",
+        "exit_time": "2026-06-28T00:00:00+00:00",
+        "entry_price": 1571.599976,
+        "exit_price": 1572.300049,
+        "quantity": 5.579423,
+        "exit_reason": "sell",
+        "pnl": 3.9060033978788598
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-28T15:00:00+00:00",
+        "exit_time": "2026-06-28T16:00:00+00:00",
+        "entry_price": 1578.550049,
+        "exit_price": 1571.672097,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -38.375003581696284
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-28T16:00:00+00:00",
+        "exit_time": "2026-06-28T17:00:00+00:00",
+        "entry_price": 1570.5,
+        "exit_price": 1566.945847,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -19.830122993719236
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-28T17:00:00+00:00",
+        "exit_time": "2026-06-28T19:00:00+00:00",
+        "entry_price": 1569.890015,
+        "exit_price": 1564.856371,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -28.084829107411263
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-29T06:00:00+00:00",
+        "exit_time": "2026-06-29T08:00:00+00:00",
+        "entry_price": 1580.459961,
+        "exit_price": 1573.5925,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -38.31646985500327
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-29T08:00:00+00:00",
+        "exit_time": "2026-06-29T09:00:00+00:00",
+        "entry_price": 1570.579956,
+        "exit_price": 1569.771734,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -4.509412415906638
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-29T09:00:00+00:00",
+        "exit_time": "2026-06-29T10:00:00+00:00",
+        "entry_price": 1573.900024,
+        "exit_price": 1576.308831,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 13.439753178361137
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-29T10:00:00+00:00",
+        "exit_time": "2026-06-29T11:00:00+00:00",
+        "entry_price": 1576.219971,
+        "exit_price": 1570.378669,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -32.591094728746235
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-29T11:00:00+00:00",
+        "exit_time": "2026-06-29T12:00:00+00:00",
+        "entry_price": 1572.709961,
+        "exit_price": 1586.27875,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 75.70601342874659
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-29T12:00:00+00:00",
+        "exit_time": "2026-06-29T13:00:00+00:00",
+        "entry_price": 1573.680054,
+        "exit_price": 1577.990444,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 24.049489104970547
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-29T13:00:00+00:00",
+        "exit_time": "2026-06-29T14:00:00+00:00",
+        "entry_price": 1569.26001,
+        "exit_price": 1568.36875,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -4.972716542979301
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-29T14:00:00+00:00",
+        "exit_time": "2026-06-29T15:00:00+00:00",
+        "entry_price": 1569.76001,
+        "exit_price": 1573.254234,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 19.495753752752176
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-29T15:00:00+00:00",
+        "exit_time": "2026-06-29T16:00:00+00:00",
+        "entry_price": 1577.550049,
+        "exit_price": 1576.268992,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -7.147558890110547
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-29T16:00:00+00:00",
+        "exit_time": "2026-06-29T17:00:00+00:00",
+        "entry_price": 1582.660034,
+        "exit_price": 1625.422016,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 238.58718589638596
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-29T17:00:00+00:00",
+        "exit_time": "2026-06-29T18:00:00+00:00",
+        "entry_price": 1625.579956,
+        "exit_price": 1618.437097,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -39.85303179035725
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-29T18:00:00+00:00",
+        "exit_time": "2026-06-29T19:00:00+00:00",
+        "entry_price": 1618.469971,
+        "exit_price": 1616.686008,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -9.953484193349476
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-29T19:00:00+00:00",
+        "exit_time": "2026-06-29T20:00:00+00:00",
+        "entry_price": 1622.910034,
+        "exit_price": 1615.800444,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -39.66740996657015
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-29T20:00:00+00:00",
+        "exit_time": "2026-06-29T21:00:00+00:00",
+        "entry_price": 1615.089966,
+        "exit_price": 1612.208508,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -16.07687303873437
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-29T21:00:00+00:00",
+        "exit_time": "2026-06-29T22:00:00+00:00",
+        "entry_price": 1617.650024,
+        "exit_price": 1611.4025,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -34.85757909865263
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-29T22:00:00+00:00",
+        "exit_time": "2026-06-30T00:00:00+00:00",
+        "entry_price": 1610.550049,
+        "exit_price": 1603.790726,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -37.713122210628974
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-30T00:00:00+00:00",
+        "exit_time": "2026-06-30T01:00:00+00:00",
+        "entry_price": 1592.02002,
+        "exit_price": 1589.5125,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -13.990514760959364
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-30T01:00:00+00:00",
+        "exit_time": "2026-06-30T03:00:00+00:00",
+        "entry_price": 1591.5,
+        "exit_price": 1585.452944,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -33.73908332868862
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-30T03:00:00+00:00",
+        "exit_time": "2026-06-30T04:00:00+00:00",
+        "entry_price": 1584.319946,
+        "exit_price": 1580.378347,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -21.991848117376982
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-06-30T04:00:00+00:00",
+        "exit_time": "2026-06-30T07:00:00+00:00",
+        "entry_price": 1585.099976,
+        "exit_price": 1589.75,
+        "quantity": 5.579423,
+        "exit_reason": "sell",
+        "pnl": 25.94445085615217
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T04:00:00+00:00",
+        "exit_time": "2026-07-01T05:00:00+00:00",
+        "entry_price": 1596.810059,
+        "exit_price": 1590.398065,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -35.77522679946101
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T05:00:00+00:00",
+        "exit_time": "2026-07-01T06:00:00+00:00",
+        "entry_price": 1590.26001,
+        "exit_price": 1582.706734,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -42.14292183974727
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T06:00:00+00:00",
+        "exit_time": "2026-07-01T07:00:00+00:00",
+        "entry_price": 1573.660034,
+        "exit_price": 1571.035403,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -14.643926567912489
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T07:00:00+00:00",
+        "exit_time": "2026-07-01T08:00:00+00:00",
+        "entry_price": 1576.180054,
+        "exit_price": 1572.119919,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -22.653210602104696
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T08:00:00+00:00",
+        "exit_time": "2026-07-01T10:00:00+00:00",
+        "entry_price": 1580.02002,
+        "exit_price": 1574.955645,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -28.256290355624596
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T10:00:00+00:00",
+        "exit_time": "2026-07-01T11:00:00+00:00",
+        "entry_price": 1571.060059,
+        "exit_price": 1565.64246,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -30.227076465376342
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T11:00:00+00:00",
+        "exit_time": "2026-07-01T13:00:00+00:00",
+        "entry_price": 1567.72998,
+        "exit_price": 1587.950403,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 112.81829315592891
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T13:00:00+00:00",
+        "exit_time": "2026-07-01T14:00:00+00:00",
+        "entry_price": 1595.930054,
+        "exit_price": 1606.517016,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 59.06913928292648
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T14:00:00+00:00",
+        "exit_time": "2026-07-01T15:00:00+00:00",
+        "entry_price": 1599.319946,
+        "exit_price": 1620.904799,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 120.4310252798181
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T15:00:00+00:00",
+        "exit_time": "2026-07-01T16:00:00+00:00",
+        "entry_price": 1618.76001,
+        "exit_price": 1616.944597,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -10.128957046699195
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T16:00:00+00:00",
+        "exit_time": "2026-07-01T17:00:00+00:00",
+        "entry_price": 1613.079956,
+        "exit_price": 1615.14371,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 11.514556533942097
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T17:00:00+00:00",
+        "exit_time": "2026-07-01T18:00:00+00:00",
+        "entry_price": 1621.280029,
+        "exit_price": 1614.64621,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -37.01288230643646
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T18:00:00+00:00",
+        "exit_time": "2026-07-01T19:00:00+00:00",
+        "entry_price": 1614.98999,
+        "exit_price": 1614.357621,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -3.5282541430865875
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T19:00:00+00:00",
+        "exit_time": "2026-07-01T20:00:00+00:00",
+        "entry_price": 1616.0,
+        "exit_price": 1610.308024,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -31.75794180984838
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T20:00:00+00:00",
+        "exit_time": "2026-07-01T21:00:00+00:00",
+        "entry_price": 1616.219971,
+        "exit_price": 1626.387258,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 56.72759493540093
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T21:00:00+00:00",
+        "exit_time": "2026-07-01T22:00:00+00:00",
+        "entry_price": 1630.329956,
+        "exit_price": 1634.745161,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 24.63429632671508
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T22:00:00+00:00",
+        "exit_time": "2026-07-01T23:00:00+00:00",
+        "entry_price": 1620.47998,
+        "exit_price": 1612.377581,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -45.20671133577759
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-01T23:00:00+00:00",
+        "exit_time": "2026-07-02T00:00:00+00:00",
+        "entry_price": 1607.640015,
+        "exit_price": 1599.601815,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -44.848517958599786
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T00:00:00+00:00",
+        "exit_time": "2026-07-02T01:00:00+00:00",
+        "entry_price": 1601.869995,
+        "exit_price": 1614.885,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 72.61621824211485
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T01:00:00+00:00",
+        "exit_time": "2026-07-02T02:00:00+00:00",
+        "entry_price": 1618.5,
+        "exit_price": 1614.427339,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -22.723098454602585
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T02:00:00+00:00",
+        "exit_time": "2026-07-02T03:00:00+00:00",
+        "entry_price": 1618.869995,
+        "exit_price": 1631.8,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 72.14196728711465
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T03:00:00+00:00",
+        "exit_time": "2026-07-02T04:00:00+00:00",
+        "entry_price": 1637.550049,
+        "exit_price": 1629.730444,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -43.6288839879145
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T04:00:00+00:00",
+        "exit_time": "2026-07-02T05:00:00+00:00",
+        "entry_price": 1630.900024,
+        "exit_price": 1624.665806,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -34.78333929621431
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T05:00:00+00:00",
+        "exit_time": "2026-07-02T06:00:00+00:00",
+        "entry_price": 1624.839966,
+        "exit_price": 1619.461976,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -30.006081099769748
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T06:00:00+00:00",
+        "exit_time": "2026-07-02T08:00:00+00:00",
+        "entry_price": 1617.060059,
+        "exit_price": 1615.770565,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -7.194632481961314
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T08:00:00+00:00",
+        "exit_time": "2026-07-02T09:00:00+00:00",
+        "entry_price": 1622.959961,
+        "exit_price": 1640.287379,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 96.67699451981444
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T09:00:00+00:00",
+        "exit_time": "2026-07-02T11:00:00+00:00",
+        "entry_price": 1641.050049,
+        "exit_price": 1644.157944,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 17.34026084458555
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T11:00:00+00:00",
+        "exit_time": "2026-07-02T12:00:00+00:00",
+        "entry_price": 1648.640015,
+        "exit_price": 1657.321774,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 48.439205845057316
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T12:00:00+00:00",
+        "exit_time": "2026-07-02T13:00:00+00:00",
+        "entry_price": 1661.040039,
+        "exit_price": 1703.20121,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 235.23500718433283
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T13:00:00+00:00",
+        "exit_time": "2026-07-02T14:00:00+00:00",
+        "entry_price": 1708.790039,
+        "exit_price": 1712.603911,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 21.279205155855703
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T14:00:00+00:00",
+        "exit_time": "2026-07-02T15:00:00+00:00",
+        "entry_price": 1699.829956,
+        "exit_price": 1693.091976,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -37.5940405855406
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T15:00:00+00:00",
+        "exit_time": "2026-07-02T16:00:00+00:00",
+        "entry_price": 1695.099976,
+        "exit_price": 1693.529839,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -8.760458490950619
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T16:00:00+00:00",
+        "exit_time": "2026-07-02T17:00:00+00:00",
+        "entry_price": 1698.089966,
+        "exit_price": 1695.22129,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -16.00555685394828
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T17:00:00+00:00",
+        "exit_time": "2026-07-02T18:00:00+00:00",
+        "entry_price": 1694.26001,
+        "exit_price": 1697.300806,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 16.965887140708002
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T18:00:00+00:00",
+        "exit_time": "2026-07-02T19:00:00+00:00",
+        "entry_price": 1700.47998,
+        "exit_price": 1695.569516,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -27.397555782272264
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T19:00:00+00:00",
+        "exit_time": "2026-07-02T20:00:00+00:00",
+        "entry_price": 1698.880005,
+        "exit_price": 1696.48496,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -13.362969159034899
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T20:00:00+00:00",
+        "exit_time": "2026-07-02T21:00:00+00:00",
+        "entry_price": 1703.869995,
+        "exit_price": 1695.688911,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -45.645728234532314
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T21:00:00+00:00",
+        "exit_time": "2026-07-02T23:00:00+00:00",
+        "entry_price": 1698.48999,
+        "exit_price": 1690.912984,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -42.27532154753791
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-02T23:00:00+00:00",
+        "exit_time": "2026-07-03T01:00:00+00:00",
+        "entry_price": 1698.439941,
+        "exit_price": 1707.260766,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 49.21511388397508
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-03T01:00:00+00:00",
+        "exit_time": "2026-07-03T02:00:00+00:00",
+        "entry_price": 1710.390015,
+        "exit_price": 1704.514556,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -32.781671080156244
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-03T02:00:00+00:00",
+        "exit_time": "2026-07-03T03:00:00+00:00",
+        "entry_price": 1702.880005,
+        "exit_price": 1701.489839,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -7.756324154217489
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-03T03:00:00+00:00",
+        "exit_time": "2026-07-03T05:00:00+00:00",
+        "entry_price": 1704.319946,
+        "exit_price": 1709.569234,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 29.287998200823882
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-03T05:00:00+00:00",
+        "exit_time": "2026-07-03T08:00:00+00:00",
+        "entry_price": 1712.709961,
+        "exit_price": 1723.131089,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 58.14388124914374
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-03T08:00:00+00:00",
+        "exit_time": "2026-07-03T09:00:00+00:00",
+        "entry_price": 1717.869995,
+        "exit_price": 1719.718185,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 10.311833794369617
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-03T09:00:00+00:00",
+        "exit_time": "2026-07-03T10:00:00+00:00",
+        "entry_price": 1724.23999,
+        "exit_price": 1738.265,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 78.25146336923036
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-03T10:00:00+00:00",
+        "exit_time": "2026-07-03T11:00:00+00:00",
+        "entry_price": 1739.969971,
+        "exit_price": 1737.230161,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -15.286558929630191
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-03T11:00:00+00:00",
+        "exit_time": "2026-07-03T12:00:00+00:00",
+        "entry_price": 1740.51001,
+        "exit_price": 1734.265081,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -34.84310049596676
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-03T12:00:00+00:00",
+        "exit_time": "2026-07-03T13:00:00+00:00",
+        "entry_price": 1734.48999,
+        "exit_price": 1741.25,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 37.71695527422981
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-03T13:00:00+00:00",
+        "exit_time": "2026-07-03T14:00:00+00:00",
+        "entry_price": 1746.160034,
+        "exit_price": 1737.429234,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -48.712826328400254
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-03T14:00:00+00:00",
+        "exit_time": "2026-07-03T15:00:00+00:00",
+        "entry_price": 1735.400024,
+        "exit_price": 1734.692984,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -3.9448752379200354
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-03T15:00:00+00:00",
+        "exit_time": "2026-07-03T17:00:00+00:00",
+        "entry_price": 1729.439941,
+        "exit_price": 1731.160685,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 9.600758650711821
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-03T17:00:00+00:00",
+        "exit_time": "2026-07-03T19:00:00+00:00",
+        "entry_price": 1736.76001,
+        "exit_price": 1742.841976,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 33.93386098561781
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-03T19:00:00+00:00",
+        "exit_time": "2026-07-03T20:00:00+00:00",
+        "entry_price": 1743.5,
+        "exit_price": 1761.219597,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 98.86512705253112
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-03T20:00:00+00:00",
+        "exit_time": "2026-07-03T21:00:00+00:00",
+        "entry_price": 1764.390015,
+        "exit_price": 1763.936049,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -2.532868341618205
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-03T21:00:00+00:00",
+        "exit_time": "2026-07-04T01:00:00+00:00",
+        "entry_price": 1761.780029,
+        "exit_price": 1753.478589,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -46.31724526911976
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-04T01:00:00+00:00",
+        "exit_time": "2026-07-04T03:00:00+00:00",
+        "entry_price": 1746.099976,
+        "exit_price": 1745.826976,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -1.5231824789995028
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-04T03:00:00+00:00",
+        "exit_time": "2026-07-04T04:00:00+00:00",
+        "entry_price": 1752.109985,
+        "exit_price": 1753.6875,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 8.801623473844712
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-04T04:00:00+00:00",
+        "exit_time": "2026-07-04T06:00:00+00:00",
+        "entry_price": 1759.890015,
+        "exit_price": 1751.180081,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -48.596406088081864
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-04T06:00:00+00:00",
+        "exit_time": "2026-07-04T09:00:00+00:00",
+        "entry_price": 1753.209961,
+        "exit_price": 1754.981049,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 9.881649122223797
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-04T09:00:00+00:00",
+        "exit_time": "2026-07-04T13:00:00+00:00",
+        "entry_price": 1756.52002,
+        "exit_price": 1767.766774,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 62.75039794294206
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-04T13:00:00+00:00",
+        "exit_time": "2026-07-04T14:00:00+00:00",
+        "entry_price": 1762.719971,
+        "exit_price": 1764.433549,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 9.560776505494546
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-04T14:00:00+00:00",
+        "exit_time": "2026-07-04T15:00:00+00:00",
+        "entry_price": 1770.930054,
+        "exit_price": 1786.960242,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 89.439199621525
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-04T15:00:00+00:00",
+        "exit_time": "2026-07-04T17:00:00+00:00",
+        "entry_price": 1789.719971,
+        "exit_price": 1795.746169,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 33.622707723754125
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-04T17:00:00+00:00",
+        "exit_time": "2026-07-04T18:00:00+00:00",
+        "entry_price": 1797.800049,
+        "exit_price": 1795.188911,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -14.568643413373904
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-04T18:00:00+00:00",
+        "exit_time": "2026-07-04T20:00:00+00:00",
+        "entry_price": 1792.25,
+        "exit_price": 1787.129435,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -28.56979813399468
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-04T20:00:00+00:00",
+        "exit_time": "2026-07-04T22:00:00+00:00",
+        "entry_price": 1785.72998,
+        "exit_price": 1783.846008,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -10.511476708156476
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-04T22:00:00+00:00",
+        "exit_time": "2026-07-04T23:00:00+00:00",
+        "entry_price": 1783.140015,
+        "exit_price": 1775.139758,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -44.63681791171055
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-04T23:00:00+00:00",
+        "exit_time": "2026-07-05T00:00:00+00:00",
+        "entry_price": 1779.069946,
+        "exit_price": 1770.393589,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -48.4090658020113
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-05T00:00:00+00:00",
+        "exit_time": "2026-07-05T01:00:00+00:00",
+        "entry_price": 1771.089966,
+        "exit_price": 1764.135,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -38.80469726461808
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-05T01:00:00+00:00",
+        "exit_time": "2026-07-05T02:00:00+00:00",
+        "entry_price": 1765.060059,
+        "exit_price": 1757.259516,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -43.522529026688076
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-05T02:00:00+00:00",
+        "exit_time": "2026-07-05T04:00:00+00:00",
+        "entry_price": 1759.089966,
+        "exit_price": 1761.816694,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 15.213568917944524
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-05T04:00:00+00:00",
+        "exit_time": "2026-07-05T05:00:00+00:00",
+        "entry_price": 1766.079956,
+        "exit_price": 1764.180054,
+        "quantity": 5.579423,
+        "exit_reason": "sell",
+        "pnl": -10.60035691654662
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-05T19:00:00+00:00",
+        "exit_time": "2026-07-05T21:00:00+00:00",
+        "entry_price": 1779.76001,
+        "exit_price": 1782.124556,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 13.192802336958104
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-05T21:00:00+00:00",
+        "exit_time": "2026-07-05T22:00:00+00:00",
+        "entry_price": 1785.26001,
+        "exit_price": 1796.452581,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 62.448088066533245
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-05T22:00:00+00:00",
+        "exit_time": "2026-07-05T23:00:00+00:00",
+        "entry_price": 1788.150024,
+        "exit_price": 1791.796049,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 20.34271574357505
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-05T23:00:00+00:00",
+        "exit_time": "2026-07-06T00:00:00+00:00",
+        "entry_price": 1784.199951,
+        "exit_price": 1783.467903,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -4.08440544830443
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-06T00:00:00+00:00",
+        "exit_time": "2026-07-06T01:00:00+00:00",
+        "entry_price": 1791.900024,
+        "exit_price": 1788.5125,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -18.900429318651916
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-06T01:00:00+00:00",
+        "exit_time": "2026-07-06T02:00:00+00:00",
+        "entry_price": 1784.530029,
+        "exit_price": 1779.448065,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -28.35442682677184
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-06T02:00:00+00:00",
+        "exit_time": "2026-07-06T03:00:00+00:00",
+        "entry_price": 1782.199951,
+        "exit_price": 1774.353669,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -43.777726255285856
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-06T03:00:00+00:00",
+        "exit_time": "2026-07-06T05:00:00+00:00",
+        "entry_price": 1778.069946,
+        "exit_price": 1773.886049,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -23.343731151431644
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-06T05:00:00+00:00",
+        "exit_time": "2026-07-06T08:00:00+00:00",
+        "entry_price": 1772.199951,
+        "exit_price": 1767.906089,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -23.957272401625946
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-06T08:00:00+00:00",
+        "exit_time": "2026-07-06T09:00:00+00:00",
+        "entry_price": 1763.910034,
+        "exit_price": 1755.578024,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -46.48780823023046
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-06T20:00:00+00:00",
+        "exit_time": "2026-07-06T21:00:00+00:00",
+        "entry_price": 1791.73999,
+        "exit_price": 1821.058911,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 163.58266216258326
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-06T21:00:00+00:00",
+        "exit_time": "2026-07-06T22:00:00+00:00",
+        "entry_price": 1813.5,
+        "exit_price": 1806.41254,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -39.543937335579805
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-06T22:00:00+00:00",
+        "exit_time": "2026-07-06T23:00:00+00:00",
+        "entry_price": 1805.180054,
+        "exit_price": 1799.935081,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -29.263922990578138
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-06T23:00:00+00:00",
+        "exit_time": "2026-07-07T00:00:00+00:00",
+        "entry_price": 1798.560059,
+        "exit_price": 1799.845565,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 7.172381743038941
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-07T00:00:00+00:00",
+        "exit_time": "2026-07-07T01:00:00+00:00",
+        "entry_price": 1802.390015,
+        "exit_price": 1793.378065,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -50.28148110484912
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-07T01:00:00+00:00",
+        "exit_time": "2026-07-07T02:00:00+00:00",
+        "entry_price": 1791.5,
+        "exit_price": 1784.134476,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -41.095374012652286
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-07T02:00:00+00:00",
+        "exit_time": "2026-07-07T03:00:00+00:00",
+        "entry_price": 1777.209961,
+        "exit_price": 1771.189516,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -33.59060930323561
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-07T03:00:00+00:00",
+        "exit_time": "2026-07-07T04:00:00+00:00",
+        "entry_price": 1770.22998,
+        "exit_price": 1763.38875,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -38.17011601028998
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-07T04:00:00+00:00",
+        "exit_time": "2026-07-07T05:00:00+00:00",
+        "entry_price": 1765.130005,
+        "exit_price": 1763.39871,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -9.659627142785254
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-07T05:00:00+00:00",
+        "exit_time": "2026-07-07T06:00:00+00:00",
+        "entry_price": 1769.290039,
+        "exit_price": 1772.095,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 15.650063917503271
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-07T06:00:00+00:00",
+        "exit_time": "2026-07-07T07:00:00+00:00",
+        "entry_price": 1777.689941,
+        "exit_price": 1772.204435,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -30.605958343037926
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-07T07:00:00+00:00",
+        "exit_time": "2026-07-07T08:00:00+00:00",
+        "entry_price": 1769.890015,
+        "exit_price": 1768.910034,
+        "quantity": 5.579423,
+        "exit_reason": "sell",
+        "pnl": -5.467728530962735
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-07T17:00:00+00:00",
+        "exit_time": "2026-07-07T18:00:00+00:00",
+        "entry_price": 1809.079956,
+        "exit_price": 1800.283306,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -49.08023133295
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-07T18:00:00+00:00",
+        "exit_time": "2026-07-07T19:00:00+00:00",
+        "entry_price": 1785.119995,
+        "exit_price": 1781.885766,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -18.04513166986652
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-07T19:00:00+00:00",
+        "exit_time": "2026-07-07T20:00:00+00:00",
+        "entry_price": 1789.430054,
+        "exit_price": 1783.04,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -35.6528142588418
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-07T20:00:00+00:00",
+        "exit_time": "2026-07-07T21:00:00+00:00",
+        "entry_price": 1783.0,
+        "exit_price": 1779.507701,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -19.485013363477016
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-07T21:00:00+00:00",
+        "exit_time": "2026-07-07T22:00:00+00:00",
+        "entry_price": 1772.640015,
+        "exit_price": 1768.652339,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -22.248931190947804
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-07T22:00:00+00:00",
+        "exit_time": "2026-07-07T23:00:00+00:00",
+        "entry_price": 1774.369995,
+        "exit_price": 1770.701976,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -20.46542957303677
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-07T23:00:00+00:00",
+        "exit_time": "2026-07-08T00:00:00+00:00",
+        "entry_price": 1770.060059,
+        "exit_price": 1774.025242,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 22.123433229409137
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-08T00:00:00+00:00",
+        "exit_time": "2026-07-08T01:00:00+00:00",
+        "entry_price": 1779.0,
+        "exit_price": 1770.831331,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -45.57645969798649
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-09T06:00:00+00:00",
+        "exit_time": "2026-07-09T07:00:00+00:00",
+        "entry_price": 1753.579956,
+        "exit_price": 1750.7025,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -16.054544187887657
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-09T07:00:00+00:00",
+        "exit_time": "2026-07-09T09:00:00+00:00",
+        "entry_price": 1751.699951,
+        "exit_price": 1748.652742,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -17.00166798040737
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-09T09:00:00+00:00",
+        "exit_time": "2026-07-09T10:00:00+00:00",
+        "entry_price": 1754.160034,
+        "exit_price": 1747.578185,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -36.722919693126556
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-09T10:00:00+00:00",
+        "exit_time": "2026-07-09T12:00:00+00:00",
+        "entry_price": 1744.719971,
+        "exit_price": 1738.344556,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -35.57113708554486
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-09T12:00:00+00:00",
+        "exit_time": "2026-07-09T13:00:00+00:00",
+        "entry_price": 1740.290039,
+        "exit_price": 1741.051049,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 4.2459966972296765
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-09T13:00:00+00:00",
+        "exit_time": "2026-07-09T14:00:00+00:00",
+        "entry_price": 1745.079956,
+        "exit_price": 1738.861976,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -34.6927406255407
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-09T14:00:00+00:00",
+        "exit_time": "2026-07-09T15:00:00+00:00",
+        "entry_price": 1741.5,
+        "exit_price": 1738.672984,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -15.773118091767765
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-09T15:00:00+00:00",
+        "exit_time": "2026-07-09T16:00:00+00:00",
+        "entry_price": 1737.810059,
+        "exit_price": 1733.588549,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -23.55358998872918
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-09T16:00:00+00:00",
+        "exit_time": "2026-07-09T17:00:00+00:00",
+        "entry_price": 1737.459961,
+        "exit_price": 1741.49875,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 22.53411223874673
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-09T17:00:00+00:00",
+        "exit_time": "2026-07-09T18:00:00+00:00",
+        "entry_price": 1747.109985,
+        "exit_price": 1749.140403,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 11.328560888814303
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-09T18:00:00+00:00",
+        "exit_time": "2026-07-09T23:00:00+00:00",
+        "entry_price": 1750.099976,
+        "exit_price": 1742.722581,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -41.16160734308488
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-09T23:00:00+00:00",
+        "exit_time": "2026-07-10T00:00:00+00:00",
+        "entry_price": 1743.819946,
+        "exit_price": 1736.682984,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -39.82012993292622
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-10T00:00:00+00:00",
+        "exit_time": "2026-07-10T01:00:00+00:00",
+        "entry_price": 1741.47998,
+        "exit_price": 1767.020524,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 142.50149862611175
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-10T01:00:00+00:00",
+        "exit_time": "2026-07-10T02:00:00+00:00",
+        "entry_price": 1766.140015,
+        "exit_price": 1764.343911,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -10.021223967992078
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-10T02:00:00+00:00",
+        "exit_time": "2026-07-10T03:00:00+00:00",
+        "entry_price": 1771.47998,
+        "exit_price": 1769.308951,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -12.1130891362675
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-10T03:00:00+00:00",
+        "exit_time": "2026-07-10T06:00:00+00:00",
+        "entry_price": 1774.800049,
+        "exit_price": 1770.134879,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -26.02895679690994
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-10T06:00:00+00:00",
+        "exit_time": "2026-07-10T08:00:00+00:00",
+        "entry_price": 1770.01001,
+        "exit_price": 1778.950565,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 49.88313819976573
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-10T08:00:00+00:00",
+        "exit_time": "2026-07-10T09:00:00+00:00",
+        "entry_price": 1782.969971,
+        "exit_price": 1784.5325,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 8.718010240767226
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-10T09:00:00+00:00",
+        "exit_time": "2026-07-10T10:00:00+00:00",
+        "entry_price": 1791.5,
+        "exit_price": 1791.835766,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 1.8733805430175616
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-10T10:00:00+00:00",
+        "exit_time": "2026-07-10T12:00:00+00:00",
+        "entry_price": 1795.680054,
+        "exit_price": 1796.840645,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 6.475428118993378
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-10T12:00:00+00:00",
+        "exit_time": "2026-07-10T13:00:00+00:00",
+        "entry_price": 1792.5,
+        "exit_price": 1800.850524,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 46.591105667651725
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-10T13:00:00+00:00",
+        "exit_time": "2026-07-10T14:00:00+00:00",
+        "entry_price": 1802.800049,
+        "exit_price": 1794.273589,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -47.57272703258024
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-10T14:00:00+00:00",
+        "exit_time": "2026-07-10T15:00:00+00:00",
+        "entry_price": 1783.459961,
+        "exit_price": 1786.223951,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 15.421469377769563
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-10T15:00:00+00:00",
+        "exit_time": "2026-07-10T16:00:00+00:00",
+        "entry_price": 1789.699951,
+        "exit_price": 1789.189153,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -2.8499581095541258
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-10T16:00:00+00:00",
+        "exit_time": "2026-07-10T17:00:00+00:00",
+        "entry_price": 1796.0,
+        "exit_price": 1788.900565,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -39.61075092600547
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-10T17:00:00+00:00",
+        "exit_time": "2026-07-10T18:00:00+00:00",
+        "entry_price": 1786.73999,
+        "exit_price": 1781.826129,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -27.416509082202985
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-10T18:00:00+00:00",
+        "exit_time": "2026-07-10T19:00:00+00:00",
+        "entry_price": 1783.579956,
+        "exit_price": 1786.711492,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 17.47216398372727
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-10T19:00:00+00:00",
+        "exit_time": "2026-07-11T01:00:00+00:00",
+        "entry_price": 1791.109985,
+        "exit_price": 1788.582097,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -14.10415644862442
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-11T01:00:00+00:00",
+        "exit_time": "2026-07-11T14:00:00+00:00",
+        "entry_price": 1788.119995,
+        "exit_price": 1806.084234,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 100.23008825409649
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-11T14:00:00+00:00",
+        "exit_time": "2026-07-11T15:00:00+00:00",
+        "entry_price": 1809.650024,
+        "exit_price": 1816.790444,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 39.839423577659716
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-11T15:00:00+00:00",
+        "exit_time": "2026-07-11T16:00:00+00:00",
+        "entry_price": 1813.52002,
+        "exit_price": 1813.208347,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -1.7389555046785978
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-11T16:00:00+00:00",
+        "exit_time": "2026-07-11T17:00:00+00:00",
+        "entry_price": 1822.01001,
+        "exit_price": 1818.999315,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -16.797940928984673
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-11T17:00:00+00:00",
+        "exit_time": "2026-07-11T19:00:00+00:00",
+        "entry_price": 1823.280029,
+        "exit_price": 1818.700766,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -25.549645305249463
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-11T19:00:00+00:00",
+        "exit_time": "2026-07-11T22:00:00+00:00",
+        "entry_price": 1823.410034,
+        "exit_price": 1818.939556,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -24.942687774193764
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-11T22:00:00+00:00",
+        "exit_time": "2026-07-11T23:00:00+00:00",
+        "entry_price": 1812.790039,
+        "exit_price": 1805.566815,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -40.30142211975241
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-11T23:00:00+00:00",
+        "exit_time": "2026-07-12T00:00:00+00:00",
+        "entry_price": 1786.810059,
+        "exit_price": 1780.731653,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -33.91399823973722
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-12T00:00:00+00:00",
+        "exit_time": "2026-07-12T01:00:00+00:00",
+        "entry_price": 1787.72998,
+        "exit_price": 1798.253589,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 58.715666097606174
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-12T01:00:00+00:00",
+        "exit_time": "2026-07-12T03:00:00+00:00",
+        "entry_price": 1805.579956,
+        "exit_price": 1802.114194,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -19.336952215326228
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-12T03:00:00+00:00",
+        "exit_time": "2026-07-12T04:00:00+00:00",
+        "entry_price": 1810.420044,
+        "exit_price": 1804.800049,
+        "quantity": 5.579423,
+        "exit_reason": "sell",
+        "pnl": -31.3563293628851
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-12T16:00:00+00:00",
+        "exit_time": "2026-07-12T21:00:00+00:00",
+        "entry_price": 1820.75,
+        "exit_price": 1813.576492,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -40.024035525884464
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-12T21:00:00+00:00",
+        "exit_time": "2026-07-12T22:00:00+00:00",
+        "entry_price": 1811.400024,
+        "exit_price": 1802.343024,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -50.53283411100009
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-12T22:00:00+00:00",
+        "exit_time": "2026-07-13T00:00:00+00:00",
+        "entry_price": 1804.01001,
+        "exit_price": 1831.645726,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 154.19134947186802
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-13T00:00:00+00:00",
+        "exit_time": "2026-07-13T01:00:00+00:00",
+        "entry_price": 1825.329956,
+        "exit_price": 1819.058951,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -34.988589530115334
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-13T01:00:00+00:00",
+        "exit_time": "2026-07-13T02:00:00+00:00",
+        "entry_price": 1805.73999,
+        "exit_price": 1804.551895,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -6.628884569184865
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-13T02:00:00+00:00",
+        "exit_time": "2026-07-13T03:00:00+00:00",
+        "entry_price": 1805.660034,
+        "exit_price": 1796.631734,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -50.372704670899694
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-14T04:00:00+00:00",
+        "exit_time": "2026-07-14T06:00:00+00:00",
+        "entry_price": 1783.72998,
+        "exit_price": 1781.726653,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -11.177408740321708
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-14T06:00:00+00:00",
+        "exit_time": "2026-07-14T08:00:00+00:00",
+        "entry_price": 1780.910034,
+        "exit_price": 1778.831169,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -11.598867194894725
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-14T08:00:00+00:00",
+        "exit_time": "2026-07-14T10:00:00+00:00",
+        "entry_price": 1783.890015,
+        "exit_price": 1793.696411,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 54.714031389507724
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-14T10:00:00+00:00",
+        "exit_time": "2026-07-14T12:00:00+00:00",
+        "entry_price": 1798.390015,
+        "exit_price": 1851.635242,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 297.07764416402165
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-14T12:00:00+00:00",
+        "exit_time": "2026-07-14T13:00:00+00:00",
+        "entry_price": 1858.589966,
+        "exit_price": 1871.296451,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 70.89485465815461
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-14T13:00:00+00:00",
+        "exit_time": "2026-07-14T14:00:00+00:00",
+        "entry_price": 1869.780029,
+        "exit_price": 1871.366169,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 8.849745997219367
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-14T14:00:00+00:00",
+        "exit_time": "2026-07-14T15:00:00+00:00",
+        "entry_price": 1879.380005,
+        "exit_price": 1875.575,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -21.22973241211465
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-14T15:00:00+00:00",
+        "exit_time": "2026-07-14T17:00:00+00:00",
+        "entry_price": 1873.709961,
+        "exit_price": 1866.520524,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -40.112910154850994
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-14T17:00:00+00:00",
+        "exit_time": "2026-07-14T22:00:00+00:00",
+        "entry_price": 1870.47998,
+        "exit_price": 1885.525,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 83.94253062346013
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-14T22:00:00+00:00",
+        "exit_time": "2026-07-14T23:00:00+00:00",
+        "entry_price": 1881.189941,
+        "exit_price": 1882.072379,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 4.92349487327325
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-14T23:00:00+00:00",
+        "exit_time": "2026-07-15T00:00:00+00:00",
+        "entry_price": 1890.540039,
+        "exit_price": 1882.520081,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -44.74673812423449
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T00:00:00+00:00",
+        "exit_time": "2026-07-15T01:00:00+00:00",
+        "entry_price": 1880.380005,
+        "exit_price": 1871.376129,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -50.23643284354795
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T01:00:00+00:00",
+        "exit_time": "2026-07-15T03:00:00+00:00",
+        "entry_price": 1869.130005,
+        "exit_price": 1868.271734,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -4.788656957633329
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T03:00:00+00:00",
+        "exit_time": "2026-07-15T05:00:00+00:00",
+        "entry_price": 1874.939941,
+        "exit_price": 1872.291451,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -14.777046021270213
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T05:00:00+00:00",
+        "exit_time": "2026-07-15T06:00:00+00:00",
+        "entry_price": 1880.900024,
+        "exit_price": 1880.938065,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 0.21224683034311764
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T06:00:00+00:00",
+        "exit_time": "2026-07-15T07:00:00+00:00",
+        "entry_price": 1874.709961,
+        "exit_price": 1866.510565,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -45.74789862850788
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T07:00:00+00:00",
+        "exit_time": "2026-07-15T08:00:00+00:00",
+        "entry_price": 1868.77002,
+        "exit_price": 1869.167258,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 2.216358833674088
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T08:00:00+00:00",
+        "exit_time": "2026-07-15T10:00:00+00:00",
+        "entry_price": 1878.040039,
+        "exit_price": 1875.923226,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -11.81059513889825
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T10:00:00+00:00",
+        "exit_time": "2026-07-15T12:00:00+00:00",
+        "entry_price": 1876.75,
+        "exit_price": 1917.802742,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 229.05061292786647
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T12:00:00+00:00",
+        "exit_time": "2026-07-15T13:00:00+00:00",
+        "entry_price": 1925.609985,
+        "exit_price": 1934.578549,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 50.039412258572085
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T13:00:00+00:00",
+        "exit_time": "2026-07-15T14:00:00+00:00",
+        "entry_price": 1924.109985,
+        "exit_price": 1924.021492,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -0.49373987953883985
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T14:00:00+00:00",
+        "exit_time": "2026-07-15T15:00:00+00:00",
+        "entry_price": 1931.77002,
+        "exit_price": 1926.32,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -30.407966938459975
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T15:00:00+00:00",
+        "exit_time": "2026-07-15T16:00:00+00:00",
+        "entry_price": 1930.0,
+        "exit_price": 1921.156008,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -49.3443723766164
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T16:00:00+00:00",
+        "exit_time": "2026-07-15T17:00:00+00:00",
+        "entry_price": 1917.609985,
+        "exit_price": 1919.454476,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 10.291195508693345
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T17:00:00+00:00",
+        "exit_time": "2026-07-15T18:00:00+00:00",
+        "entry_price": 1926.650024,
+        "exit_price": 1925.683185,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -5.394403753896644
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T18:00:00+00:00",
+        "exit_time": "2026-07-15T21:00:00+00:00",
+        "entry_price": 1922.910034,
+        "exit_price": 1919.474395,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -19.16888325629721
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T21:00:00+00:00",
+        "exit_time": "2026-07-15T23:00:00+00:00",
+        "entry_price": 1921.030029,
+        "exit_price": 1916.300403,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -26.388584085798296
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-15T23:00:00+00:00",
+        "exit_time": "2026-07-16T00:00:00+00:00",
+        "entry_price": 1916.76001,
+        "exit_price": 1914.161129,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -14.500256425662398
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-16T00:00:00+00:00",
+        "exit_time": "2026-07-16T01:00:00+00:00",
+        "entry_price": 1913.589966,
+        "exit_price": 1915.186008,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": 8.904993443765429
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-16T01:00:00+00:00",
+        "exit_time": "2026-07-16T03:00:00+00:00",
+        "entry_price": 1921.400024,
+        "exit_price": 1918.031694,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -18.793337873590083
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-16T03:00:00+00:00",
+        "exit_time": "2026-07-16T05:00:00+00:00",
+        "entry_price": 1917.47998,
+        "exit_price": 1916.290444,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -6.636924517728498
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-16T05:00:00+00:00",
+        "exit_time": "2026-07-16T06:00:00+00:00",
+        "entry_price": 1924.22998,
+        "exit_price": 1917.683347,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -36.526434732759874
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-16T06:00:00+00:00",
+        "exit_time": "2026-07-16T07:00:00+00:00",
+        "entry_price": 1921.160034,
+        "exit_price": 1911.583992,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -53.428788983765536
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-16T07:00:00+00:00",
+        "exit_time": "2026-07-16T08:00:00+00:00",
+        "entry_price": 1908.880005,
+        "exit_price": 1901.564395,
+        "quantity": 5.579423,
+        "exit_reason": "trailing_stop_sell",
+        "pnl": -40.81688269302933
+      },
+      {
+        "symbol": "ETH-USD",
+        "entry_time": "2026-07-16T08:00:00+00:00",
+        "exit_time": "2026-07-16T09:00:00+00:00",
+        "entry_price": 1884.819946,
+        "exit_price": 1882.939941,
+        "quantity": 5.579423,
+        "exit_reason": "sell",
+        "pnl": -10.489343137114904
+      }
+    ]
+  }
+}

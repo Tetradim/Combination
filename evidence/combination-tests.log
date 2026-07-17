@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.15, pytest-9.0.2, pluggy-1.6.0 -- /opt/hostedtoolcache/Python/3.11.15/x64/bin/python
+cachedir: .pytest_cache
+rootdir: /home/runner/work/Combination/Combination/combination
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.14.2
+collecting ... collected 12 items
+
+tests/test_brackets.py::test_bracket_exits_use_confirmed_fill_quantity PASSED [  8%]
+tests/test_broker_catalog.py::test_catalog_contains_major_listed_futures_brokerages PASSED [ 16%]
+tests/test_broker_catalog.py::test_catalog_contains_crypto_futures_companies PASSED [ 25%]
+tests/test_broker_catalog.py::test_aliases_and_registry_resolve PASSED   [ 33%]
+tests/test_fill_processor.py::test_execution_idempotency_prevents_double_mutation PASSED [ 41%]
+tests/test_instruments.py::test_instrument_enforces_tick_and_quantity_rules PASSED [ 50%]
+tests/test_lifecycle.py::test_partial_fill_can_arrive_while_cancel_is_pending PASSED [ 58%]
+tests/test_lifecycle.py::test_terminal_order_cannot_reopen PASSED        [ 66%]
+tests/test_order_gateway.py::test_gateway_blocks_failed_readiness_before_broker_call PASSED [ 75%]
+tests/test_positions.py::test_position_ledger_handles_reduction_and_side_flip PASSED [ 83%]
+tests/test_readiness.py::test_every_exposure_readiness_gate_is_required PASSED [ 91%]
+tests/test_risk.py::test_reduce_only_cannot_increase_or_reverse_exposure PASSED [100%]
+
+- generated xml file: /home/runner/work/Combination/Combination/validation-output/combination-junit.xml -
+============================== 12 passed in 0.22s ==============================
