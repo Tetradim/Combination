@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-07-17T00:54:00Z",
+  "provenance": {
+    "main_commit_exhaustive_public": "ba08534b42ff16409fb0fc7a0b753a1bb1a3db54",
+    "validation_pr_head": "a45f0d6524448bb32e6d26effc4c762d04a50c5b",
+    "validation_merge_commit_historical": "45e350fd44024965f2ef8f367bc06d6bc605c2ca",
+    "sentinel_archive_commit": "44aa4337cfb15aeb562a874b8dbc3fa799149f18",
+    "workflow_runs": {
+      "standard_ci_initial": 29545599860,
+      "archive_historical_initial": 29545599861,
+      "standard_ci_repeat": 29545734396,
+      "archive_historical_repeat": 29545734425,
+      "expanded_public_derivatives": 29545734415,
+      "exhaustive_validation": 29545734461
+    }
+  },
+  "combination": {
+    "unique_tests": 12,
+    "python_versions": ["3.11", "3.12", "3.13"],
+    "exhaustive_complete_suite_runs": 38,
+    "exhaustive_test_invocations": 456,
+    "standard_ci_runs": 2,
+    "historical_workflow_combination_runs": 2,
+    "stress_suite_runs": 20,
+    "stress_suite_failures": 0,
+    "database_cycles": 30,
+    "database_failures": 0,
+    "import_cycles": 100,
+    "import_failures": 0,
+    "catalog_companies": 44,
+    "adapter_factory_keys": 24
+  },
+  "sentinel_archive": {
+    "unique_tests": 98,
+    "deterministic_scenarios_passed": 6,
+    "deterministic_scenarios_total": 6,
+    "historical_symbols": ["ES=F", "NQ=F", "CL=F", "GC=F", "BTC-USD", "ETH-USD"],
+    "historical_parameter_cases": 648,
+    "historical_failures": []
+  },
+  "historical_matrix": {
+    "cases": 648,
+    "positive": 89,
+    "negative": 559,
+    "zero": 0,
+    "mean_return_pct": -0.8574416752,
+    "median_return_pct": -0.6347845345,
+    "min_return_pct": -4.335151492,
+    "max_return_pct": 2.301281004
+  },
+  "public_derivatives": {
+    "ccxt_version": "4.5.66",
+    "companies": 18,
+    "reachable": 15,
+    "blocked_or_failed": 3,
+    "policy": "Unauthenticated read-only public market data only. No order, cancellation, account, position, or credential call was executed."
+  },
+  "readiness": {
+    "code_level": "pass_with_limited_unique_coverage",
+    "archive_replay": "pass_external_harness",
+    "public_market_data": "partial_pass_15_of_18",
+    "authenticated_order_lifecycle": "not_tested",
+    "listed_futures_entitled_market_data": "not_tested",
+    "funded_trading": "not_certified"
+  }
+}
