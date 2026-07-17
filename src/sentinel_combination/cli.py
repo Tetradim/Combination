@@ -7,6 +7,7 @@ from typing import Sequence
 
 from . import __version__
 from .brokers.catalog import FuturesProduct, get_broker_company, list_broker_companies
+from .general_api_cli import run as run_general_api
 from .storage.sqlite import SQLiteStore
 
 
@@ -71,6 +72,31 @@ def _parser() -> argparse.ArgumentParser:
     )
     broker_info.add_argument("broker")
     broker_info.add_argument("--json", action="store_true", dest="as_json")
+
+    general_api = subparsers.add_parser(
+        "general-api",
+        help="Configure Sentinel Archive's General API replay-broker connection.",
+    )
+    general_api.add_argument("--config-file", default="data/general_api.json")
+    general_api_subparsers = general_api.add_subparsers(dest="general_api_command")
+    general_api_subparsers.add_parser("show", help="Show redacted General API settings.")
+    configure = general_api_subparsers.add_parser("configure", help="Update General API settings.")
+    enabled = configure.add_mutually_exclusive_group()
+    enabled.add_argument("--enable", action="store_true", dest="enabled")
+    enabled.add_argument("--disable", action="store_false", dest="enabled")
+    configure.set_defaults(enabled=None)
+    configure.add_argument("--base-url")
+    configure.add_argument("--run-id")
+    configure.add_argument("--participant-id")
+    configure.add_argument("--symbols", help="Comma-separated equity- and crypto-futures symbols.")
+    configure.add_argument("--api-token", help="Archive participant token; stored in a mode-0600 file.")
+    configure.add_argument("--timeout-seconds", type=float)
+    configure.add_argument("--starting-cash", type=float)
+    configure.add_argument("--commission-per-order", type=float)
+    configure.add_argument("--slippage-bps", type=float)
+    general_api_subparsers.add_parser("test", help="Test Archive reachability and authentication.")
+    general_api_subparsers.add_parser("register", help="Register Combination with the replay run.")
+    general_api_subparsers.add_parser("account", help="Read Combination's simulated account.")
     return parser
 
 
@@ -123,6 +149,9 @@ def main(argv: Sequence[str] | None = None) -> int:
             for key, value in payload.items():
                 print(f"{key}: {value}")
         return 0
+
+    if args.command == "general-api":
+        return run_general_api(args.general_api_command, args.config_file, args)
 
     if args.command == "doctor":
         store = SQLiteStore(Path(args.path))
