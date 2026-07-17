@@ -1,0 +1,3 @@
+Sentinel Combination exhaustive validation campaign trigger.
+
+Purpose: run the current CI, public derivatives validation, and Sentinel Archive historical replay workflows against the latest main source without changing runtime behavior.
